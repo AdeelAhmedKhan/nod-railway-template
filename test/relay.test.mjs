@@ -1,1 +1,265 @@
-Ly8gUmVsYXkgY29udHJhY3QgdGVzdHMgZm9yIHJlbGF5L2RvY2tlciAodGhlIHNoaW0pIGFuZAovLyByZWxheS9ub2QtcmVsYXktYWdlbnQubWpzICh0aGUgYWdlbnQpLCBydW4gd2l0aCBwbGFpbiBub2RlOgovLwovLyAgIG5vZGUgLS10ZXN0IHRlc3QvcmVsYXkudGVzdC5tanMKLy8KLy8gVGhlIGFnZW50cyBydW4gaW4gdGVzdCBtb2RlIChOT0RfUkVMQVlfVEVTVD0xKSBhZ2FpbnN0IGEgdGVtcG9yYXJ5Ci8vIHdvcmtzcGFjZSByb290IGFuZCBhIGZpeHR1cmUgYnJpZGdlIHNjcmlwdCwgc28gbm8gY29udGFpbmVycyBhcmUgbmVlZGVkLgovLyBUaGUgdGVzdHMgZXhlcmNpc2UgdGhlIHJlYWwgc2hpbSBiaW5hcnkgZW5kIHRvIGVuZCBvdmVyIHJlYWwgc29ja2V0czoKLy8gc3RkaW8gZmlkZWxpdHksIGV4aXQgY29kZXMsIHRoZSB1cHN0cmVhbSBhbGxvdyBydWxlcywgdG9rZW4gcmVqZWN0aW9uLAovLyBlbnZpcm9ubWVudCBzY3J1YmJpbmcsIGFuZCBwcml2aWxlZ2UtZHJvcCBoYXJkZW5pbmcgd2hlcmUgdGhlIG1hY2hpbmUKLy8gYWxsb3dzIGl0IChyb290ICsgc2V0cHJpdikuCmltcG9ydCB7IHRlc3QsIGJlZm9yZSwgYWZ0ZXIgfSBmcm9tICdub2RlOnRlc3QnOwppbXBvcnQgYXNzZXJ0IGZyb20gJ25vZGU6YXNzZXJ0L3N0cmljdCc7CmltcG9ydCB7IHNwYXduIH0gZnJvbSAnbm9kZTpjaGlsZF9wcm9jZXNzJzsKaW1wb3J0IHsgbWtkdGVtcFN5bmMsIG1rZGlyU3luYywgd3JpdGVGaWxlU3luYywgcm1TeW5jLCBleGlzdHNTeW5jLCBjb3B5RmlsZVN5bmMsIGNobW9kU3luYyB9IGZyb20gJ25vZGU6ZnMnOwppbXBvcnQgeyB0bXBkaXIgfSBmcm9tICdub2RlOm9zJzsKaW1wb3J0IHsgam9pbiwgZGlybmFtZSB9IGZyb20gJ25vZGU6cGF0aCc7CmltcG9ydCB7IGZpbGVVUkxUb1BhdGggfSBmcm9tICdub2RlOnVybCc7Cgpjb25zdCBST09UID0gam9pbihkaXJuYW1lKGZpbGVVUkxUb1BhdGgoaW1wb3J0Lm1ldGEudXJsKSksICcuLicpOwpjb25zdCBTSElNID0gam9pbihST09ULCAncmVsYXknLCAnZG9ja2VyJyk7CmNvbnN0IEFHRU5UID0gam9pbihST09ULCAncmVsYXknLCAnbm9kLXJlbGF5LWFnZW50Lm1qcycpOwpjb25zdCBUT0tFTiA9ICd0ZXN0LXJlbGF5LXRva2VuLXRlc3QtcmVsYXktdG9rZW4tMDEyMzQ1Njc4OSc7CmNvbnN0IFRIUkVBRCA9ICcxMjNlNDU2Ny1lODliLTQyZDMtYTQ1Ni00MjY2MTQxNzQwMDAnOwpjb25zdCBXU19QT1JUID0gMTcwNzE7CmNvbnN0IEJSX1BPUlQgPSAxNzA3MjsKCmNvbnN0IHRtcCA9IG1rZHRlbXBTeW5jKGpvaW4odG1wZGlyKCksICdub2QtcmVsYXktdGVzdC0nKSk7CmNvbnN0IHdzUm9vdCA9IGpvaW4odG1wLCAnd29ya3NwYWNlJyk7Cm1rZGlyU3luYyh3c1Jvb3QsIHsgcmVjdXJzaXZlOiB0cnVlIH0pOwovLyBDb21tYW5kcyBydW4gYXMgdWlkIDEwMDAgYWZ0ZXIgdGhlIHByaXZpbGVnZSBkcm9wLCBzbyB0aGUgdGVtcCB0cmVlIG11c3QKLy8gYmUgdHJhdmVyc2FibGUgYnkgdGhhdCB1aWQgKHRoZSByZXBvIGNoZWNrb3V0IGl0c2VsZiBtYXkgbm90IGJlKS4KY2htb2RTeW5jKHRtcCwgMG83NTUpOwpjaG1vZFN5bmMod3NSb290LCAwbzc1NSk7CmNvbnN0IGJyaWRnZUZpeHR1cmUgPSBqb2luKHRtcCwgJ2JyaWRnZS5tanMnKTsKY29weUZpbGVTeW5jKGpvaW4oUk9PVCwgJ3Rlc3QnLCAnZml4dHVyZXMnLCAnYnJpZGdlLm1qcycpLCBicmlkZ2VGaXh0dXJlKTsKY2htb2RTeW5jKGJyaWRnZUZpeHR1cmUsIDBvNjQ0KTsKY29uc3QgY29uZmlnRGlyID0gam9pbih0bXAsICdkb2NrZXItY29uZmlnJyk7Cm1rZGlyU3luYyhjb25maWdEaXIsIHsgcmVjdXJzaXZlOiB0cnVlIH0pOwp3cml0ZUZpbGVTeW5jKAogIGpvaW4oY29uZmlnRGlyLCAnbm9kLXJlbGF5Lmpzb24nKSwKICBKU09OLnN0cmluZ2lmeSh7CiAgICB0b2tlbjogVE9LRU4sCiAgICB3b3Jrc3BhY2U6IGAxMjcuMC4wLjE6JHtXU19QT1JUfWAsCiAgICBicm93c2VyOiBgMTI3LjAuMC4xOiR7QlJfUE9SVH1gLAogICAgY29ubmVjdFRpbWVvdXRNczogNTAwMCwKICB9KSwKKTsKCmNvbnN0IGFnZW50cyA9IFtdOwpmdW5jdGlvbiBzdGFydEFnZW50KG1vZGUsIHBvcnQsIGV4dHJhRW52ID0ge30pIHsKICBjb25zdCBjaGlsZCA9IHNwYXduKHByb2Nlc3MuZXhlY1BhdGgsIFtBR0VOVF0sIHsKICAgIGVudjogewogICAgICAuLi5wcm9jZXNzLmVudiwKICAgICAgTk9EX1JFTEFZX1RFU1Q6ICcxJywKICAgICAgTk9EX1JFTEFZX01PREU6IG1vZGUsCiAgICAgIE5PRF9SRUxBWV9UT0tFTjogVE9LRU4sCiAgICAgIE5PRF9SRUxBWV9QT1JUOiBTdHJpbmcocG9ydCksCiAgICAgIE5PRF9SRUxBWV9XT1JLU1BBQ0VfUk9PVDogd3NSb290LAogICAgICBOT0RfUkVMQVlfQlJPV1NFUl9CUklER0U6IGJyaWRnZUZpeHR1cmUsCiAgICAgIE5PRF9SRUxBWV9URVNUX1BBVEg6IHByb2Nlc3MuZW52LlBBVEgsCiAgICAgIC4uLmV4dHJhRW52LAogICAgfSwKICAgIHN0ZGlvOiBbJ2lnbm9yZScsICdwaXBlJywgJ3BpcGUnXSwKICB9KTsKICBhZ2VudHMucHVzaChjaGlsZCk7CiAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHsKICAgIGNvbnN0IHRpbWVyID0gc2V0VGltZW91dCgoKSA9PiByZWplY3QobmV3IEVycm9yKGAke21vZGV9IGFnZW50IGRpZCBub3Qgc3RhcnRgKSksIDEwMDAwKTsKICAgIGNoaWxkLnN0ZG91dC5vbignZGF0YScsIChkKSA9PiB7CiAgICAgIGlmIChTdHJpbmcoZCkuaW5jbHVkZXMoJ2xpc3RlbmluZycpKSB7CiAgICAgICAgY2xlYXJUaW1lb3V0KHRpbWVyKTsKICAgICAgICByZXNvbHZlKGNoaWxkKTsKICAgICAgfQogICAgfSk7CiAgICBjaGlsZC5zdGRlcnIub24oJ2RhdGEnLCAoZCkgPT4gcHJvY2Vzcy5zdGRlcnIud3JpdGUoYFthZ2VudCAke21vZGV9XSAke2R9YCkpOwogICAgY2hpbGQub24oJ2V4aXQnLCAoY29kZSkgPT4gewogICAgICBjbGVhclRpbWVvdXQodGltZXIpOwogICAgICByZWplY3QobmV3IEVycm9yKGAke21vZGV9IGFnZW50IGV4aXRlZCBlYXJseSB3aXRoICR7Y29kZX1gKSk7CiAgICB9KTsKICB9KTsKfQoKYmVmb3JlKGFzeW5jICgpID0+IHsKICBhd2FpdCBzdGFydEFnZW50KCd3b3Jrc3BhY2UnLCBXU19QT1JUKTsKICBhd2FpdCBzdGFydEFnZW50KCdicm93c2VyJywgQlJfUE9SVCk7Cn0pOwphZnRlcigoKSA9PiB7CiAgZm9yIChjb25zdCBhIG9mIGFnZW50cykgYS5raWxsKCdTSUdLSUxMJyk7CiAgcm1TeW5jKHRtcCwgeyByZWN1cnNpdmU6IHRydWUsIGZvcmNlOiB0cnVlIH0pOwp9KTsKCi8vIFJ1bnMgdGhlIHJlYWwgc2hpbSBsaWtlIHRoZSBOb2Qgc2VydmVyIHdvdWxkLiBSZXR1cm5zIHtjb2RlLCBzdGRvdXQsIHN0ZGVycn0uCi8vIFdpdGggZW5kU3RkaW49ZmFsc2UgdGhlIGNhbGxlciBrZWVwcyBzdGRpbiBvcGVuIChicm93c2VyLWNsaWVudCBiZWhhdmlvdXIpLgpmdW5jdGlvbiBydW5TaGltKGFyZ3MsIHsgaW5wdXQgPSAnJywgZW5kU3RkaW4gPSB0cnVlIH0gPSB7fSkgewogIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7CiAgICBjb25zdCBjaGlsZCA9IHNwYXduKHByb2Nlc3MuZXhlY1BhdGgsIFtTSElNLCAuLi5hcmdzXSwgewogICAgICBlbnY6IHsgLi4ucHJvY2Vzcy5lbnYsIERPQ0tFUl9DT05GSUc6IGNvbmZpZ0RpciB9LAogICAgICBzdGRpbzogWydwaXBlJywgJ3BpcGUnLCAncGlwZSddLAogICAgfSk7CiAgICBsZXQgc3Rkb3V0ID0gQnVmZmVyLmFsbG9jKDApOwogICAgbGV0IHN0ZGVyciA9IEJ1ZmZlci5hbGxvYygwKTsKICAgIGNoaWxkLnN0ZG91dC5vbignZGF0YScsIChkKSA9PiAoc3Rkb3V0ID0gQnVmZmVyLmNvbmNhdChbc3Rkb3V0LCBkXSkpKTsKICAgIGNoaWxkLnN0ZGVyci5vbignZGF0YScsIChkKSA9PiAoc3RkZXJyID0gQnVmZmVyLmNvbmNhdChbc3RkZXJyLCBkXSkpKTsKICAgIGNoaWxkLm9uKCdlcnJvcicsIHJlamVjdCk7CiAgICBjaGlsZC5vbignY2xvc2UnLCAoY29kZSkgPT4gcmVzb2x2ZSh7IGNvZGUsIHN0ZG91dCwgc3RkZXJyOiBzdGRlcnIudG9TdHJpbmcoKSB9KSk7CiAgICBpZiAoaW5wdXQpIGNoaWxkLnN0ZGluLndyaXRlKGlucHV0KTsKICAgIGlmIChlbmRTdGRpbikgY2hpbGQuc3RkaW4uZW5kKCk7CiAgfSk7Cn0KZnVuY3Rpb24gcnVuU2hpbU9wZW4oYXJncywgaW5wdXQgPSAnJykgewogIGNvbnN0IGNoaWxkID0gc3Bhd24ocHJvY2Vzcy5leGVjUGF0aCwgW1NISU0sIC4uLmFyZ3NdLCB7CiAgICBlbnY6IHsgLi4ucHJvY2Vzcy5lbnYsIERPQ0tFUl9DT05GSUc6IGNvbmZpZ0RpciB9LAogICAgc3RkaW86IFsncGlwZScsICdwaXBlJywgJ3BpcGUnXSwKICB9KTsKICBsZXQgc3Rkb3V0ID0gQnVmZmVyLmFsbG9jKDApOwogIGNoaWxkLnN0ZG91dC5vbignZGF0YScsIChkKSA9PiAoc3Rkb3V0ID0gQnVmZmVyLmNvbmNhdChbc3Rkb3V0LCBkXSkpKTsKICBpZiAoaW5wdXQpIGNoaWxkLnN0ZGluLndyaXRlKGlucHV0KTsKICByZXR1cm4geyBjaGlsZCwgZ2V0U3Rkb3V0OiAoKSA9PiBzdGRvdXQgfTsKfQoKY29uc3QgTk9ERSA9IHByb2Nlc3MuZXhlY1BhdGg7CmNvbnN0IGVjaG9TdGRpbiA9IFsnLWUnLCAncHJvY2Vzcy5zdGRpbi5waXBlKHByb2Nlc3Muc3Rkb3V0KSddOwoKdGVzdCgnd29ya3NwYWNlIGV4ZWMgcGlwZXMgc3RkaW4gdG8gc3Rkb3V0IGJ5dGUgZm9yIGJ5dGUnLCBhc3luYyAoKSA9PiB7CiAgY29uc3QgcGF5bG9hZCA9IEJ1ZmZlci5mcm9tKFswLCAxLCAyLCAyNTAsIDI1MSwgMTAsIDEzLCA2NSwgNjYsIDY3XSk7CiAgY29uc3QgciA9IGF3YWl0IHJ1blNoaW0oCiAgICBbJ2V4ZWMnLCAnLWknLCAnLS11c2VyJywgJ25vZGUnLCAnLS13b3JrZGlyJywgYC93b3Jrc3BhY2UvJHtUSFJFQUR9YCwgJ25vZC13b3Jrc3BhY2UnLCBOT0RFLCAuLi5lY2hvU3RkaW5dLAogICAgeyBpbnB1dDogcGF5bG9hZCB9LAogICk7CiAgYXNzZXJ0LmVxdWFsKHIuY29kZSwgMCk7CiAgYXNzZXJ0LmRlZXBFcXVhbChyLnN0ZG91dCwgcGF5bG9hZCk7Cn0pOwoKdGVzdCgnd29ya3NwYWNlIGV4ZWMgcHJvcGFnYXRlcyB0aGUgZXhpdCBjb2RlIGFuZCBzZXBhcmF0ZXMgc3RkZXJyJywgYXN5bmMgKCkgPT4gewogIGNvbnN0IHIgPSBhd2FpdCBydW5TaGltKFsKICAgICdleGVjJywgJy1pJywgJy0tdXNlcicsICdub2RlJywgJy0td29ya2RpcicsIGAvd29ya3NwYWNlLyR7VEhSRUFEfWAsICdub2Qtd29ya3NwYWNlJywKICAgIE5PREUsICctZScsICdwcm9jZXNzLnN0ZG91dC53cml0ZSgib3V0Iik7IHByb2Nlc3Muc3RkZXJyLndyaXRlKCJlcnIiKTsgcHJvY2Vzcy5leGl0KDcpJywKICBdKTsKICBhc3NlcnQuZXF1YWwoci5jb2RlLCA3KTsKICBhc3NlcnQuZXF1YWwoci5zdGRvdXQudG9TdHJpbmcoKSwgJ291dCcpOwogIGFzc2VydC5tYXRjaChyLnN0ZGVyciwgL2Vyci8pOwp9KTsKCnRlc3QoJ3dvcmtzcGFjZSBleGVjIGNyZWF0ZXMgYW5kIGVudGVycyB0aGUgdGhyZWFkIHdvcmtkaXInLCBhc3luYyAoKSA9PiB7CiAgY29uc3QgciA9IGF3YWl0IHJ1blNoaW0oWwogICAgJ2V4ZWMnLCAnLWknLCAnLS11c2VyJywgJ25vZGUnLCAnLS13b3JrZGlyJywgYC93b3Jrc3BhY2UvJHtUSFJFQUR9YCwgJ25vZC13b3Jrc3BhY2UnLAogICAgTk9ERSwgJy1lJywgJ3Byb2Nlc3Muc3Rkb3V0LndyaXRlKHByb2Nlc3MuY3dkKCkpJywKICBdKTsKICBhc3NlcnQuZXF1YWwoci5jb2RlLCAwKTsKICBhc3NlcnQuZXF1YWwoci5zdGRvdXQudG9TdHJpbmcoKSwgam9pbih3c1Jvb3QsIFRIUkVBRCkpOwogIGFzc2VydC5vayhleGlzdHNTeW5jKGpvaW4od3NSb290LCBUSFJFQUQpKSk7Cn0pOwoKdGVzdCgndGhlIHJlbGF5IHRva2VuIG5ldmVyIHJlYWNoZXMgdGhlIGV4ZWN1dGVkIGNvbW1hbmQsIGFuZCB0aGUgZW52IGlzIHRoZSBmaXhlZCBzZXQnLCBhc3luYyAoKSA9PiB7CiAgY29uc3QgciA9IGF3YWl0IHJ1blNoaW0oWwogICAgJ2V4ZWMnLCAnLWknLCAnLS11c2VyJywgJ25vZGUnLCAnLS13b3JrZGlyJywgYC93b3Jrc3BhY2UvJHtUSFJFQUR9YCwgJ25vZC13b3Jrc3BhY2UnLAogICAgTk9ERSwgJy1lJywgJ3Byb2Nlc3Muc3Rkb3V0LndyaXRlKEpTT04uc3RyaW5naWZ5KHByb2Nlc3MuZW52KSknLAogIF0pOwogIGFzc2VydC5lcXVhbChyLmNvZGUsIDApOwogIGNvbnN0IGVudiA9IEpTT04ucGFyc2Uoci5zdGRvdXQudG9TdHJpbmcoKSk7CiAgYXNzZXJ0Lm9rKCEoJ05PRF9SRUxBWV9UT0tFTicgaW4gZW52KSwgJ3Rva2VuIGxlYWtlZCBpbnRvIGNvbW1hbmQgZW52Jyk7CiAgYXNzZXJ0LmVxdWFsKGVudi5IT01FLCAnL2hvbWUvbm9kZScpOwogIGFzc2VydC5lcXVhbChlbnYuTEFORywgJ0MuVVRGLTgnKTsKICBhc3NlcnQub2soISgnTk9EX0FVVEhfVE9LRU4nIGluIGVudikgJiYgISgnREFUQUJBU0VfVVJMJyBpbiBlbnYpKTsKfSk7Cgp0ZXN0KCdhIHdyb25nIHRva2VuIGlzIHJlZnVzZWQgd2l0aCBleGl0IDEyNicsIGFzeW5jICgpID0+IHsKICBjb25zdCBiYWREaXIgPSBqb2luKHRtcCwgJ2JhZC1jb25maWcnKTsKICBta2RpclN5bmMoYmFkRGlyLCB7IHJlY3Vyc2l2ZTogdHJ1ZSB9KTsKICB3cml0ZUZpbGVTeW5jKAogICAgam9pbihiYWREaXIsICdub2QtcmVsYXkuanNvbicpLAogICAgSlNPTi5zdHJpbmdpZnkoeyB0b2tlbjogJ3dyb25nLXRva2VuLXdyb25nLXRva2VuLXdyb25nLXRva2VuLTAwMCcsIHdvcmtzcGFjZTogYDEyNy4wLjAuMToke1dTX1BPUlR9YCwgYnJvd3NlcjogYDEyNy4wLjAuMToke0JSX1BPUlR9YCB9KSwKICApOwogIGNvbnN0IGNoaWxkID0gc3Bhd24ocHJvY2Vzcy5leGVjUGF0aCwgW1NISU0sICdleGVjJywgJy1pJywgJy0tdXNlcicsICdub2RlJywgJy0td29ya2RpcicsIGAvd29ya3NwYWNlLyR7VEhSRUFEfWAsICdub2Qtd29ya3NwYWNlJywgTk9ERSwgLi4uZWNob1N0ZGluXSwgewogICAgZW52OiB7IC4uLnByb2Nlc3MuZW52LCBET0NLRVJfQ09ORklHOiBiYWREaXIgfSwKICAgIHN0ZGlvOiBbJ3BpcGUnLCAncGlwZScsICdwaXBlJ10sCiAgfSk7CiAgbGV0IHN0ZGVyciA9ICcnOwogIGNoaWxkLnN0ZGVyci5vbignZGF0YScsIChkKSA9PiAoc3RkZXJyICs9IGQpKTsKICBjb25zdCBjb2RlID0gYXdhaXQgbmV3IFByb21pc2UoKHJlc29sdmUpID0+IGNoaWxkLm9uKCdjbG9zZScsIHJlc29sdmUpKTsKICBjaGlsZC5zdGRpbi5lbmQoKTsKICBhc3NlcnQuZXF1YWwoY29kZSwgMTI2KTsKICBhc3NlcnQubWF0Y2goc3RkZXJyLCAvcmVmdXNlZDogYmFkIHRva2VuLyk7Cn0pOwoKdGVzdCgnYSB3b3JrZGlyIG91dHNpZGUgdGhlIHdvcmtzcGFjZSBpcyByZWZ1c2VkJywgYXN5bmMgKCkgPT4gewogIGNvbnN0IHIgPSBhd2FpdCBydW5TaGltKFsKICAgICdleGVjJywgJy1pJywgJy0tdXNlcicsICdub2RlJywgJy0td29ya2RpcicsICcvZXRjJywgJ25vZC13b3Jrc3BhY2UnLCBOT0RFLCAuLi5lY2hvU3RkaW4sCiAgXSk7CiAgYXNzZXJ0LmVxdWFsKHIuY29kZSwgMTI2KTsKICBhc3NlcnQubWF0Y2goci5zdGRlcnIsIC9yZWZ1c2VkLyk7Cn0pOwoKdGVzdCgnbm9kZSBtYXkgcnVuIGluIC92YXIvdG1wIChwcm9jZXNzLXN0b3AgY2hlY2sgc2hhcGUpJywgYXN5bmMgKCkgPT4gewogIGNvbnN0IHIgPSBhd2FpdCBydW5TaGltKAogICAgWydleGVjJywgJy1pJywgJy0tdXNlcicsICdub2RlJywgJy0td29ya2RpcicsICcvdmFyL3RtcCcsICdub2Qtd29ya3NwYWNlJywgTk9ERSwgLi4uZWNob1N0ZGluXSwKICAgIHsgaW5wdXQ6ICd0bXAtb2snIH0sCiAgKTsKICBhc3NlcnQuZXF1YWwoci5jb2RlLCAwKTsKICBhc3NlcnQuZXF1YWwoci5zdGRvdXQudG9TdHJpbmcoKSwgJ3RtcC1vaycpOwp9KTsKCnRlc3QoJ2Nvbm5lY3RlZC1DTEkgdXNlcnMgcnVuIGluIC92YXIvdG1wIGJ1dCBub3QgaW4gYSB0aHJlYWQgd29ya2RpcicsIGFzeW5jICgpID0+IHsKICBjb25zdCBvayA9IGF3YWl0IHJ1blNoaW0oCiAgICBbJ2V4ZWMnLCAnLWknLCAnLS11c2VyJywgJzIwMDAxOjEwMDInLCAnLS13b3JrZGlyJywgJy92YXIvdG1wJywgJ25vZC13b3Jrc3BhY2UnLCBOT0RFLCAuLi5lY2hvU3RkaW5dLAogICAgeyBpbnB1dDogJ2NsaS1vaycgfSwKICApOwogIGFzc2VydC5lcXVhbChvay5jb2RlLCAwKTsKICBhc3NlcnQuZXF1YWwob2suc3Rkb3V0LnRvU3RyaW5nKCksICdjbGktb2snKTsKICBjb25zdCByZWZ1c2VkID0gYXdhaXQgcnVuU2hpbShbCiAgICAnZXhlYycsICctaScsICctLXVzZXInLCAnMjAwMDE6MTAwMicsICctLXdvcmtkaXInLCBgL3dvcmtzcGFjZS8ke1RIUkVBRH1gLCAnbm9kLXdvcmtzcGFjZScsIE5PREUsIC4uLmVjaG9TdGRpbiwKICBdKTsKICBhc3NlcnQuZXF1YWwocmVmdXNlZC5jb2RlLCAxMjYpOwp9KTsKCnRlc3QoJ2FuIG91dC1vZi1yYW5nZSBjb25uZWN0ZWQtQ0xJIHVpZCBpcyByZWZ1c2VkJywgYXN5bmMgKCkgPT4gewogIGNvbnN0IHIgPSBhd2FpdCBydW5TaGltKFsKICAgICdleGVjJywgJy1pJywgJy0tdXNlcicsICc2MDAwMToxMDAyJywgJy0td29ya2RpcicsICcvdmFyL3RtcCcsICdub2Qtd29ya3NwYWNlJywgTk9ERSwgLi4uZWNob1N0ZGluLAogIF0pOwogIGFzc2VydC5lcXVhbChyLmNvZGUsIDEyNik7Cn0pOwoKdGVzdCgnYnJvd3NlciBleGVjIHJ1bnMgdGhlIGJyaWRnZSBhbmQgZWNob2VzIHN0ZGluJywgYXN5bmMgKCkgPT4gewogIGNvbnN0IHIgPSBhd2FpdCBydW5TaGltKFsnZXhlYycsICctaScsICctLXVzZXInLCAnbm9kZScsICdub2QtYnJvd3NlcicsICdub2RlJywgJy9hcHAvYnJpZGdlLm1qcyddLCB7CiAgICBpbnB1dDogJ2JyaWRnZS1oZWxsbycsCiAgfSk7CiAgYXNzZXJ0LmVxdWFsKHIuY29kZSwgMCk7CiAgYXNzZXJ0LmVxdWFsKHIuc3Rkb3V0LnRvU3RyaW5nKCksICdicmlkZ2UtaGVsbG8nKTsKfSk7Cgp0ZXN0KCdicm93c2VyIGV4ZWMgcmVmdXNlcyBhbnkgb3RoZXIgY29tbWFuZCBvciB1c2VyJywgYXN5bmMgKCkgPT4gewogIGNvbnN0IGJhZENtZCA9IGF3YWl0IHJ1blNoaW0oWydleGVjJywgJy1pJywgJy0tdXNlcicsICdub2RlJywgJ25vZC1icm93c2VyJywgJ25vZGUnLCAnL2V0Yy9wYXNzd2QnXSk7CiAgYXNzZXJ0LmVxdWFsKGJhZENtZC5jb2RlLCAxMjYpOwogIGNvbnN0IGJhZFVzZXIgPSBhd2FpdCBydW5TaGltKFsnZXhlYycsICctaScsICctLXVzZXInLCAncm9vdCcsICdub2QtYnJvd3NlcicsICdub2RlJywgJy9hcHAvYnJpZGdlLm1qcyddKTsKICBhc3NlcnQuZXF1YWwoYmFkVXNlci5jb2RlLCAxMjYpOwp9KTsKCnRlc3QoJ3RoZSBzaGltIGV4aXRzIHdoZW4gdGhlIGNvbW1hbmQgZXhpdHMgZXZlbiBpZiBpdHMgc3RkaW4gc3RheXMgb3BlbicsIGFzeW5jICgpID0+IHsKICBjb25zdCB7IGNoaWxkIH0gPSBydW5TaGltT3BlbihbCiAgICAnZXhlYycsICctaScsICctLXVzZXInLCAnbm9kZScsICctLXdvcmtkaXInLCBgL3dvcmtzcGFjZS8ke1RIUkVBRH1gLCAnbm9kLXdvcmtzcGFjZScsCiAgICBOT0RFLCAnLWUnLCAncHJvY2Vzcy5leGl0KDMpJywKICBdKTsKICBjb25zdCBjb2RlID0gYXdhaXQgbmV3IFByb21pc2UoKHJlc29sdmUpID0+IGNoaWxkLm9uKCdjbG9zZScsIHJlc29sdmUpKTsKICBhc3NlcnQuZXF1YWwoY29kZSwgMyk7CiAgY2hpbGQuc3RkaW4uZW5kKCk7Cn0pOwoKdGVzdCgndGhlIHNoaW0gcmVqZWN0cyBub24tZXhlYyBjb21tYW5kcyBhbmQgdW5rbm93biBjb250YWluZXJzIHdpdGggMTI1JywgYXN5bmMgKCkgPT4gewogIGNvbnN0IHIxID0gYXdhaXQgcnVuU2hpbShbJ3BzJ10pOwogIGFzc2VydC5lcXVhbChyMS5jb2RlLCAxMjUpOwogIGNvbnN0IHIyID0gYXdhaXQgcnVuU2hpbShbJ2V4ZWMnLCAnLWknLCAnLS11c2VyJywgJ25vZGUnLCAnc29tZS1vdGhlci1jb250YWluZXInLCBOT0RFLCAuLi5lY2hvU3RkaW5dKTsKICBhc3NlcnQuZXF1YWwocjIuY29kZSwgMTI1KTsKfSk7Cgp0ZXN0KCd3b3Jrc3BhY2UgY29tbWFuZHMgcnVuIGFzIHVpZCAxMDAwIHdpdGggcm9vdCBncm91cHMgY2xlYXJlZCcsIHsgc2tpcDogcHJvY2Vzcy5nZXR1aWQ/LigpICE9PSAwIH0sIGFzeW5jICgpID0+IHsKICBjb25zdCByID0gYXdhaXQgcnVuU2hpbShbCiAgICAnZXhlYycsICctaScsICctLXVzZXInLCAnbm9kZScsICctLXdvcmtkaXInLCBgL3dvcmtzcGFjZS8ke1RIUkVBRH1gLCAnbm9kLXdvcmtzcGFjZScsCiAgICBOT0RFLCAnLWUnLCAncHJvY2Vzcy5zdGRvdXQud3JpdGUoSlNPTi5zdHJpbmdpZnkoe3VpZDogcHJvY2Vzcy5nZXR1aWQoKSwgZ2lkOiBwcm9jZXNzLmdldGdpZCgpLCBncm91cHM6IHByb2Nlc3MuZ2V0Z3JvdXBzKCl9KSknLAogIF0pOwogIGFzc2VydC5lcXVhbChyLmNvZGUsIDApOwogIGNvbnN0IGlkID0gSlNPTi5wYXJzZShyLnN0ZG91dC50b1N0cmluZygpKTsKICBhc3NlcnQuZXF1YWwoaWQudWlkLCAxMDAwKTsKICBhc3NlcnQuZXF1YWwoaWQuZ2lkLCAxMDAwKTsKICBhc3NlcnQub2soIWlkLmdyb3Vwcy5pbmNsdWRlcygwKSwgYHJvb3QgZ3JvdXAgbGVha2VkOiAke0pTT04uc3RyaW5naWZ5KGlkLmdyb3Vwcyl9YCk7Cn0pOwo=
+// Relay contract tests for relay/docker (the shim) and
+// relay/nod-relay-agent.mjs (the agent), run with plain node:
+//
+//   node --test test/relay.test.mjs
+//
+// The agents run in test mode (NOD_RELAY_TEST=1) against a temporary
+// workspace root and a fixture bridge script, so no containers are needed.
+// The tests exercise the real shim binary end to end over real sockets:
+// stdio fidelity, exit codes, the upstream allow rules, token rejection,
+// environment scrubbing, and privilege-drop hardening where the machine
+// allows it (root + setpriv).
+import { test, before, after } from 'node:test';
+import assert from 'node:assert/strict';
+import { spawn } from 'node:child_process';
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync, existsSync, copyFileSync, chmodSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const SHIM = join(ROOT, 'relay', 'docker');
+const AGENT = join(ROOT, 'relay', 'nod-relay-agent.mjs');
+const TOKEN = 'test-relay-token-test-relay-token-0123456789';
+const THREAD = '123e4567-e89b-42d3-a456-426614174000';
+const WS_PORT = 17071;
+const BR_PORT = 17072;
+
+const tmp = mkdtempSync(join(tmpdir(), 'nod-relay-test-'));
+const wsRoot = join(tmp, 'workspace');
+mkdirSync(wsRoot, { recursive: true });
+// Commands run as uid 1000 after the privilege drop, so the temp tree must
+// be traversable by that uid (the repo checkout itself may not be).
+chmodSync(tmp, 0o755);
+chmodSync(wsRoot, 0o755);
+const bridgeFixture = join(tmp, 'bridge.mjs');
+copyFileSync(join(ROOT, 'test', 'fixtures', 'bridge.mjs'), bridgeFixture);
+chmodSync(bridgeFixture, 0o644);
+const configDir = join(tmp, 'docker-config');
+mkdirSync(configDir, { recursive: true });
+writeFileSync(
+  join(configDir, 'nod-relay.json'),
+  JSON.stringify({
+    token: TOKEN,
+    workspace: `127.0.0.1:${WS_PORT}`,
+    browser: `127.0.0.1:${BR_PORT}`,
+    connectTimeoutMs: 5000,
+  }),
+);
+
+const agents = [];
+function startAgent(mode, port, extraEnv = {}) {
+  const child = spawn(process.execPath, [AGENT], {
+    env: {
+      ...process.env,
+      NOD_RELAY_TEST: '1',
+      NOD_RELAY_MODE: mode,
+      NOD_RELAY_TOKEN: TOKEN,
+      NOD_RELAY_PORT: String(port),
+      NOD_RELAY_WORKSPACE_ROOT: wsRoot,
+      NOD_RELAY_BROWSER_BRIDGE: bridgeFixture,
+      NOD_RELAY_TEST_PATH: process.env.PATH,
+      ...extraEnv,
+    },
+    stdio: ['ignore', 'pipe', 'pipe'],
+  });
+  agents.push(child);
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error(`${mode} agent did not start`)), 10000);
+    child.stdout.on('data', (d) => {
+      if (String(d).includes('listening')) {
+        clearTimeout(timer);
+        resolve(child);
+      }
+    });
+    child.stderr.on('data', (d) => process.stderr.write(`[agent ${mode}] ${d}`));
+    child.on('exit', (code) => {
+      clearTimeout(timer);
+      reject(new Error(`${mode} agent exited early with ${code}`));
+    });
+  });
+}
+
+before(async () => {
+  await startAgent('workspace', WS_PORT);
+  await startAgent('browser', BR_PORT);
+});
+after(() => {
+  for (const a of agents) a.kill('SIGKILL');
+  rmSync(tmp, { recursive: true, force: true });
+});
+
+// Runs the real shim like the Nod server would. Returns {code, stdout, stderr}.
+// With endStdin=false the caller keeps stdin open (browser-client behaviour).
+function runShim(args, { input = '', endStdin = true } = {}) {
+  return new Promise((resolve, reject) => {
+    const child = spawn(process.execPath, [SHIM, ...args], {
+      env: { ...process.env, DOCKER_CONFIG: configDir },
+      stdio: ['pipe', 'pipe', 'pipe'],
+    });
+    let stdout = Buffer.alloc(0);
+    let stderr = Buffer.alloc(0);
+    child.stdout.on('data', (d) => (stdout = Buffer.concat([stdout, d])));
+    child.stderr.on('data', (d) => (stderr = Buffer.concat([stderr, d])));
+    child.on('error', reject);
+    child.on('close', (code) => resolve({ code, stdout, stderr: stderr.toString() }));
+    if (input) child.stdin.write(input);
+    if (endStdin) child.stdin.end();
+  });
+}
+function runShimOpen(args, input = '') {
+  const child = spawn(process.execPath, [SHIM, ...args], {
+    env: { ...process.env, DOCKER_CONFIG: configDir },
+    stdio: ['pipe', 'pipe', 'pipe'],
+  });
+  let stdout = Buffer.alloc(0);
+  child.stdout.on('data', (d) => (stdout = Buffer.concat([stdout, d])));
+  if (input) child.stdin.write(input);
+  return { child, getStdout: () => stdout };
+}
+
+const NODE = process.execPath;
+const echoStdin = ['-e', 'process.stdin.pipe(process.stdout)'];
+
+test('workspace exec pipes stdin to stdout byte for byte', async () => {
+  const payload = Buffer.from([0, 1, 2, 250, 251, 10, 13, 65, 66, 67]);
+  const r = await runShim(
+    ['exec', '-i', '--user', 'node', '--workdir', `/workspace/${THREAD}`, 'nod-workspace', NODE, ...echoStdin],
+    { input: payload },
+  );
+  assert.equal(r.code, 0);
+  assert.deepEqual(r.stdout, payload);
+});
+
+test('workspace exec propagates the exit code and separates stderr', async () => {
+  const r = await runShim([
+    'exec', '-i', '--user', 'node', '--workdir', `/workspace/${THREAD}`, 'nod-workspace',
+    NODE, '-e', 'process.stdout.write("out"); process.stderr.write("err"); process.exit(7)',
+  ]);
+  assert.equal(r.code, 7);
+  assert.equal(r.stdout.toString(), 'out');
+  assert.match(r.stderr, /err/);
+});
+
+test('workspace exec creates and enters the thread workdir', async () => {
+  const r = await runShim([
+    'exec', '-i', '--user', 'node', '--workdir', `/workspace/${THREAD}`, 'nod-workspace',
+    NODE, '-e', 'process.stdout.write(process.cwd())',
+  ]);
+  assert.equal(r.code, 0);
+  assert.equal(r.stdout.toString(), join(wsRoot, THREAD));
+  assert.ok(existsSync(join(wsRoot, THREAD)));
+});
+
+test('the relay token never reaches the executed command, and the env is the fixed set', async () => {
+  const r = await runShim([
+    'exec', '-i', '--user', 'node', '--workdir', `/workspace/${THREAD}`, 'nod-workspace',
+    NODE, '-e', 'process.stdout.write(JSON.stringify(process.env))',
+  ]);
+  assert.equal(r.code, 0);
+  const env = JSON.parse(r.stdout.toString());
+  assert.ok(!('NOD_RELAY_TOKEN' in env), 'token leaked into command env');
+  assert.equal(env.HOME, '/home/node');
+  assert.equal(env.LANG, 'C.UTF-8');
+  assert.ok(!('NOD_AUTH_TOKEN' in env) && !('DATABASE_URL' in env));
+});
+
+test('a wrong token is refused with exit 126', async () => {
+  const badDir = join(tmp, 'bad-config');
+  mkdirSync(badDir, { recursive: true });
+  writeFileSync(
+    join(badDir, 'nod-relay.json'),
+    JSON.stringify({ token: 'wrong-token-wrong-token-wrong-token-000', workspace: `127.0.0.1:${WS_PORT}`, browser: `127.0.0.1:${BR_PORT}` }),
+  );
+  const child = spawn(process.execPath, [SHIM, 'exec', '-i', '--user', 'node', '--workdir', `/workspace/${THREAD}`, 'nod-workspace', NODE, ...echoStdin], {
+    env: { ...process.env, DOCKER_CONFIG: badDir },
+    stdio: ['pipe', 'pipe', 'pipe'],
+  });
+  let stderr = '';
+  child.stderr.on('data', (d) => (stderr += d));
+  const code = await new Promise((resolve) => child.on('close', resolve));
+  child.stdin.end();
+  assert.equal(code, 126);
+  assert.match(stderr, /refused: bad token/);
+});
+
+test('a workdir outside the workspace is refused', async () => {
+  const r = await runShim([
+    'exec', '-i', '--user', 'node', '--workdir', '/etc', 'nod-workspace', NODE, ...echoStdin,
+  ]);
+  assert.equal(r.code, 126);
+  assert.match(r.stderr, /refused/);
+});
+
+test('node may run in /var/tmp (process-stop check shape)', async () => {
+  const r = await runShim(
+    ['exec', '-i', '--user', 'node', '--workdir', '/var/tmp', 'nod-workspace', NODE, ...echoStdin],
+    { input: 'tmp-ok' },
+  );
+  assert.equal(r.code, 0);
+  assert.equal(r.stdout.toString(), 'tmp-ok');
+});
+
+test('connected-CLI users run in /var/tmp but not in a thread workdir', async () => {
+  const ok = await runShim(
+    ['exec', '-i', '--user', '20001:1002', '--workdir', '/var/tmp', 'nod-workspace', NODE, ...echoStdin],
+    { input: 'cli-ok' },
+  );
+  assert.equal(ok.code, 0);
+  assert.equal(ok.stdout.toString(), 'cli-ok');
+  const refused = await runShim([
+    'exec', '-i', '--user', '20001:1002', '--workdir', `/workspace/${THREAD}`, 'nod-workspace', NODE, ...echoStdin,
+  ]);
+  assert.equal(refused.code, 126);
+});
+
+test('an out-of-range connected-CLI uid is refused', async () => {
+  const r = await runShim([
+    'exec', '-i', '--user', '60001:1002', '--workdir', '/var/tmp', 'nod-workspace', NODE, ...echoStdin,
+  ]);
+  assert.equal(r.code, 126);
+});
+
+test('browser exec runs the bridge and echoes stdin', async () => {
+  const r = await runShim(['exec', '-i', '--user', 'node', 'nod-browser', 'node', '/app/bridge.mjs'], {
+    input: 'bridge-hello',
+  });
+  assert.equal(r.code, 0);
+  assert.equal(r.stdout.toString(), 'bridge-hello');
+});
+
+test('browser exec refuses any other command or user', async () => {
+  const badCmd = await runShim(['exec', '-i', '--user', 'node', 'nod-browser', 'node', '/etc/passwd']);
+  assert.equal(badCmd.code, 126);
+  const badUser = await runShim(['exec', '-i', '--user', 'root', 'nod-browser', 'node', '/app/bridge.mjs']);
+  assert.equal(badUser.code, 126);
+});
+
+test('the shim exits when the command exits even if its stdin stays open', async () => {
+  const { child } = runShimOpen([
+    'exec', '-i', '--user', 'node', '--workdir', `/workspace/${THREAD}`, 'nod-workspace',
+    NODE, '-e', 'process.exit(3)',
+  ]);
+  const code = await new Promise((resolve) => child.on('close', resolve));
+  assert.equal(code, 3);
+  child.stdin.end();
+});
+
+test('the shim rejects non-exec commands and unknown containers with 125', async () => {
+  const r1 = await runShim(['ps']);
+  assert.equal(r1.code, 125);
+  const r2 = await runShim(['exec', '-i', '--user', 'node', 'some-other-container', NODE, ...echoStdin]);
+  assert.equal(r2.code, 125);
+});
+
+test('workspace commands run as uid 1000 with root groups cleared', { skip: process.getuid?.() !== 0 }, async () => {
+  const r = await runShim([
+    'exec', '-i', '--user', 'node', '--workdir', `/workspace/${THREAD}`, 'nod-workspace',
+    NODE, '-e', 'process.stdout.write(JSON.stringify({uid: process.getuid(), gid: process.getgid(), groups: process.getgroups()}))',
+  ]);
+  assert.equal(r.code, 0);
+  const id = JSON.parse(r.stdout.toString());
+  assert.equal(id.uid, 1000);
+  assert.equal(id.gid, 1000);
+  assert.ok(!id.groups.includes(0), `root group leaked: ${JSON.stringify(id.groups)}`);
+});

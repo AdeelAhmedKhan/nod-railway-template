@@ -1,1 +1,131 @@
-IyBEZXBsb3kgYW5kIEhvc3QgTm9kIG9uIFJhaWx3YXkKCk5vZCBpcyBhbiBvcGVuLXNvdXJjZSBwZXJzb25hbCBhZ2VudCBmcm9tIG44biBMYWJzLiBJdCBoYXMgaXRzIG93biBMaW51eAp3b3Jrc3BhY2UgYW5kIGl0cyBvd24gQ2hyb21pdW0gYnJvd3Nlci4gSXQgY2FuIGNoYXNlIHVucGFpZCBpbnZvaWNlcywgd3JpdGUKY2FsbCBicmllZnMgZnJvbSB5b3VyIGVtYWlsIGFuZCBjYWxlbmRhciwgd2F0Y2ggYSBwcmljaW5nIHBhZ2UgYW5kIHRlbGwgeW91CndoZW4gaXQgY2hhbmdlcywgY2FuY2VsIHRyaWFscywgYW5kIGZpbGUgcGFwZXJ3b3JrLiBJdCBhc2tzIGJlZm9yZSBpdCBzZW5kcwphbnl0aGluZyBvciBhY3RzIGZvciB5b3UuIEl0IHJlbWVtYmVycyB3aGF0IHlvdSB0ZWxsIGl0LCBhbmQgeW91IGNhbiBzZWUgYW5kCmVkaXQgZXZlcnkgbm90ZS4KCiMjIEFib3V0IEhvc3RpbmcgTm9kCgpOb2QncyBvd24gc2VsZi1ob3N0IHNldHVwIHVzZXMgRG9ja2VyIENvbXBvc2U6IHRoZSBzZXJ2ZXIgY29udHJvbHMgaXRzCndvcmtzcGFjZSBhbmQgYnJvd3NlciBjb250YWluZXJzIHRocm91Z2ggdGhlIGhvc3QncyBEb2NrZXIgc29ja2V0LiBSYWlsd2F5CmhhcyBubyBEb2NrZXIgc29ja2V0LCBzbyB0aGlzIHRlbXBsYXRlIHJ1bnMgdXBzdHJlYW0ncyBvd24gaW1hZ2VzIGFzCnNlcGFyYXRlIFJhaWx3YXkgc2VydmljZXMgYW5kIGNvbm5lY3RzIHRoZW0gd2l0aCBhIHNtYWxsLCB0b2tlbi1jaGVja2VkCmV4ZWMgcmVsYXkgb24gdGhlIHByaXZhdGUgbmV0d29yazoKCi0gKipOb2QqKjogdGhlIHNlcnZlciBhbmQgd2ViIGFwcCwgdGhlIG9ubHkgc2VydmljZSB3aXRoIGEgcHVibGljIFVSTAotICoqV29ya3NwYWNlKio6IHRoZSBMaW51eCBtYWNoaW5lIHdoZXJlIHRoZSBhZ2VudCBydW5zIGNvbW1hbmRzIChQeXRob24sCiAgTm9kZSwgTGlicmVPZmZpY2UsIGZmbXBlZywgT0NSLCB5dC1kbHApLiBGaWxlcyBhbmQgaW5zdGFsbGVkIHRvb2xzIHBlcnNpc3QKICBhY3Jvc3MgcmVzdGFydHMgYW5kIHJlZGVwbG95cy4KLSAqKkJyb3dzZXIqKjogQ2hyb21pdW0gdW5kZXIgYSB2aXJ0dWFsIGRpc3BsYXkuIFNpdGVzIHRoZSBhZ2VudCBzaWducyBpbgogIHRvIHN0YXkgc2lnbmVkIGluLgotICoqUG9zdGdyZXMqKjogY29udmVyc2F0aW9ucywgdGFza3MsIG1lbW9yeSBhbmQgdGhlIGVuY3J5cHRlZCBWYXVsdAoKVGhlIGltYWdlcyBhcmUgYnVpbHQgZnJvbSBOb2QncyBvd24gRG9ja2VyZmlsZXMgYXQgYSBwaW5uZWQgcmVsZWFzZQooMC45LjApLCBzbyBhIHJlZGVwbG95IG5ldmVyIHB1bGxzIGEgc3VycHJpc2UgdXBncmFkZS4gQWNjZXNzLCBWYXVsdCBhbmQKcmVsYXkgc2VjcmV0cyBhcmUgZ2VuZXJhdGVkIGZvciB5b3UgYXQgZGVwbG95IHRpbWU7IG5vdGhpbmcgc2VjcmV0IHNoaXBzIGluCnRoZSB0ZW1wbGF0ZS4KCioqU2l6aW5nLCBob25lc3RseSoqOiB1cHN0cmVhbSdzIHN0YXJ0aW5nIHBvaW50IGZvciB0aGlzIHN0YWNrIGlzIDIgQ1BVCmNvcmVzLCA4IEdCIFJBTSBhbmQgNTAgR0IgZGlzayBhY3Jvc3MgdGhlIHNlcnZpY2VzIChzZXJ2ZXIgfjIgR0IsIGJyb3dzZXIKfjMgR0IsIHdvcmtzcGFjZSB+MiBHQikuIE9uIFJhaWx3YXkgdGhhdCBpcyBhIEhvYmJ5IHBsYW4gb3IgYWJvdmUgYW5kIGEKcmVhbCBtb250aGx5IGNvc3QsIG5vdCBhICQ1IHRveS4gSWYgeW91IG9ubHkgd2FudCB0byB0cnkgTm9kLCB0aGUgZGVza3RvcAphcHAgb24geW91ciBvd24gbWFjaGluZSBpcyB0aGUgY2hlYXBlciByb3V0ZTsgdGhpcyB0ZW1wbGF0ZSBpcyBmb3IgYW4KYWx3YXlzLW9uIE5vZCB0aGF0IGtlZXBzIHdvcmtpbmcgd2hpbGUgeW91ciBsYXB0b3AgaXMgY2xvc2VkLgoKIyMgRmlyc3QgbG9naW4gKGEgZmV3IG1pbnV0ZXMgYWZ0ZXIgZGVwbG95KQoKMS4gV2FpdCB1bnRpbCBhbGwgZm91ciBzZXJ2aWNlcyBhcmUgZ3JlZW4uCjIuIE9wZW4gdGhlICoqTm9kKiogc2VydmljZSwgZ28gdG8gKipWYXJpYWJsZXMqKiwgYW5kIGNvcHkgYE5PRF9BVVRIX1RPS0VOYC4KMy4gT3BlbiB0aGUgTm9kIHNlcnZpY2UncyBwdWJsaWMgVVJMIGFuZCBwYXN0ZSB0aGUgdG9rZW4gaW50byB0aGUgYWNjZXNzCiAgIGZvcm0uCjQuIEZvbGxvdyBvbmJvYXJkaW5nIGFuZCBjb25uZWN0IGEgbW9kZWwuIEEgc21hbGwgbW9kZWwgc3VjaCBhcyBDbGF1ZGUKICAgSGFpa3Ugb3IgYSBHUFQgbWluaSBpcyBwbGVudHkgZm9yIG1vc3QgZXJyYW5kcy4gTm9kIHNob3dzIGVzdGltYXRlZAogICBtb2RlbCBjb3N0cyB1bmRlciBVc2FnZS4KCmBOT0RfUFVCTElDX1VSTGAgaXMgcHJlLXdpcmVkIHRvIHlvdXIgUmFpbHdheSBkb21haW4sIHNvIHRoZSBmaXJzdCBsb2dpbgp3b3JrcyB3aXRob3V0IGVkaXRpbmcgdmFyaWFibGVzLiBPbmUgTm9kIHNlcnZlciBiZWxvbmdzIHRvIG9uZSBwZXJzb24uCkFueW9uZSBob2xkaW5nIGBOT0RfQVVUSF9UT0tFTmAgaGFzIGZ1bGwgYWNjZXNzIHRvIHlvdXIgYXNzaXN0YW50IGFuZCB5b3VyCmNvbm5lY3RlZCBhY2NvdW50cywgc28gdHJlYXQgaXQgbGlrZSBhIHBhc3N3b3JkLgoKIyMgQ29ubmVjdCB0aGUgZGVza3RvcCBhcHAKCkluIHRoZSBOb2QgZGVza3RvcCBhcHAsIGNob29zZSAqKkNvbm5lY3QgdG8gYSBzZXJ2ZXIqKiwgZW50ZXIgeW91ciBSYWlsd2F5ClVSTCBhbmQgYE5PRF9BVVRIX1RPS0VOYC4gVGhlIGFwcCB0aGVuIHVzZXMgdGhpcyBzZXJ2ZXIncyBjb252ZXJzYXRpb25zLApmaWxlcywgbW9kZWxzIGFuZCBhY2NvdW50cy4KCiMjIEFwcHMsIFRlbGVncmFtIGFuZCBXaGF0c0FwcAoKT3BlbiAqKkFwcHMqKiB0byBjb25uZWN0IEdtYWlsLCBTbGFjaywgTm90aW9uLCBMaW5lYXIgYW5kIG90aGVycy4gU2lnbi1pbgpnb2VzIHRocm91Z2ggbjhuJ3MgQ29tcG9zaW8gY29ubmVjdGlvbiBzZXJ2aWNlIGFuZCByZXR1cm5zIHRvIHlvdXIgUmFpbHdheQpVUkwuIFRlbGVncmFtIGFuZCBXaGF0c0FwcCBhcmUgc2V0IHVwIHVuZGVyICoqQ2hhbm5lbHMqKiwgd2l0aCBubyB2YXJpYWJsZXMKbmVlZGVkLgoKT25lIG1hbnVhbCBzdGVwIHRvIGV4cGVjdDogaWYgeW91IGNvbm5lY3QgYSBDaGF0R1BUIHN1YnNjcmlwdGlvbiwgdGhlCnNpZ24taW4gZmluaXNoZXMgb24gYSBgMTI3LjAuMC4xYCBjYWxsYmFjayBwYWdlIHRoYXQgY2Fubm90IHJlYWNoIHRoaXMKc2VydmVyLiBOb2Qgc2hvd3MgeW91IHRoZSBhZGRyZXNzIHRvIGNvcHkgZnJvbSB0aGF0IHBhZ2UgYW5kIHBhc3RlIGJhY2sgaW47CnRoYXQgaXMgYW4gdXBzdHJlYW0gcXVpcmsgb2Ygc3Vic2NyaXB0aW9uIHNpZ24taW4sIG5vdCBhIGJyb2tlbiBkZXBsb3kuCgojIyBCYWNrIHVwIHRoZSBWYXVsdCBzZWVkCgpTYXZlZCBwYXNzd29yZHMgYW5kIEFQSSBrZXlzIGFyZSBlbmNyeXB0ZWQgd2l0aCBhIGtleSBkZXJpdmVkIGZyb20KYE5PRF9WQVVMVF9TRUVEYCBvbiB0aGUgTm9kIHNlcnZpY2UuIEtlZXAgYSBjb3B5IG9mIHRoYXQgdmFsdWUgc29tZXdoZXJlCnNhZmUsIG91dHNpZGUgUmFpbHdheS4gTmV2ZXIgY2hhbmdlIGl0OiBpZiBpdCBjaGFuZ2VzLCBldmVyeSBzYXZlZApjcmVkZW50aWFsIGJlY29tZXMgdW5yZWFkYWJsZSwgYW5kIGEgZGF0YWJhc2UgYmFja3VwIGNhbm5vdCByZWNvdmVyIHRoZW0Kd2l0aG91dCBpdC4gWW91IGNhbiBpbnN0ZWFkIHNldCBgTk9EX1ZBVUxUX0tFWWAgdG8geW91ciBvd24gMzItYnl0ZSBiYXNlNjQKa2V5LCB3aGljaCBvdmVycmlkZXMgdGhlIHNlZWQuCgojIyBDdXN0b20gZG9tYWluCgpBdHRhY2ggdGhlIGRvbWFpbiB0byB0aGUgKipOb2QqKiBzZXJ2aWNlIGluIFJhaWx3YXksIHRoZW4gc2V0CmBOT0RfUFVCTElDX1VSTGAgdG8gdGhlIGV4YWN0IG5ldyBvcmlnaW4gKGZvciBleGFtcGxlCmBodHRwczovL25vZC5leGFtcGxlLmNvbWApIGFuZCByZWRlcGxveSB0aGUgTm9kIHNlcnZpY2UuIE5vZCByZWplY3RzCnJlcXVlc3RzIGZvciBhbnkgaG9zdCBvdGhlciB0aGFuIHRoaXMgdmFsdWUsIHNvIHRoZSB0d28gbXVzdCBtYXRjaCBleGFjdGx5LgoKIyMgVHJhZGUtb2ZmcyBvZiBydW5uaW5nIE5vZCBvbiBSYWlsd2F5CgpSZWFkIHRoZXNlIGJlZm9yZSB5b3UgcmVseSBvbiB0aGlzIGRlcGxveToKCi0gKipObyB3b3Jrc3BhY2UgZmlyZXdhbGwuKiogVXBzdHJlYW0gaXNvbGF0ZXMgdGhlIGFnZW50J3Mgd29ya3NwYWNlCiAgYmVoaW5kIGFuIGlwdGFibGVzIGVncmVzcyBmaXJld2FsbC4gVGhhdCBuZWVkcyBgTkVUX0FETUlOYCwgd2hpY2gKICBSYWlsd2F5IGRvZXMgbm90IGdyYW50LCBzbyBpdCBjYW5ub3QgYmUgcmVwcm9kdWNlZCBoZXJlOiBjb21tYW5kcyBpbiB0aGUKICB3b3Jrc3BhY2UgY2FuIHJlYWNoIHRoaXMgcHJvamVjdCdzIHByaXZhdGUgbmV0d29yay4gRXZlcnkgc2VydmljZSBpbiB0aGUKICB0ZW1wbGF0ZSBpcyB0b2tlbi0gb3IgcGFzc3dvcmQtcHJvdGVjdGVkIHRvIGNvbXBlbnNhdGUsIGFuZCB5b3Ugc2hvdWxkCiAga2VlcCB0aGlzIGFzIGEgKipkZWRpY2F0ZWQgcHJvamVjdCoqIOKAlCBkbyBub3QgYWRkIHVucmVsYXRlZCBzZXJ2aWNlcyB3aXRoCiAgd2VhayBjcmVkZW50aWFscyB0byBpdC4KLSAqKkl0IGlzIGEgY2xvdWQgY29tcHV0ZXIsIG5vdCB5b3VyIGNvbXB1dGVyLioqIFRoZSBhZ2VudCBjYW5ub3Qgc2VlIHlvdXIKICBsb2NhbCBmaWxlcywgZGVza3RvcCBhcHBzLCBsb2NhbCBuZXR3b3JrLCBvciBhIGxvY2FsbHkgcnVubmluZyBtb2RlbC4KICBCcm93c2VyIHNpZ24taW5zIGhhcHBlbiBpbiB0aGUgY2xvdWQgQ2hyb21pdW0gYW5kIHN0YXkgdGhlcmUsIGFuZCB5b3VyCiAgVmF1bHQgbGl2ZXMgb24gUmFpbHdheSdzIGluZnJhc3RydWN0dXJlLiBUaGF0IGlzIHRoZSBwcmljZSBvZiBhbHdheXMtb247CiAgaWYgdGhlIGxvY2FsLWZpcnN0IHByaXZhY3kgbW9kZWwgaXMgdGhlIHBvaW50IGZvciB5b3UsIHJ1biB0aGUgZGVza3RvcAogIGFwcCBpbnN0ZWFkLgotICoqUmVzZWFyY2ggcHJldmlldy4qKiBOb2QgaXMgcHJlLTEuMCBhbmQgY2hhbmdlcyBxdWlja2x5LiBUaGlzIHRlbXBsYXRlCiAgcGlucyBvbmUgcmVsZWFzZTsgdXBncmFkaW5nIGlzIGRlbGliZXJhdGUgKHNlZSB0aGUgcmVwbyBSRUFETUUpLCBuZXZlcgogIGF1dG9tYXRpYy4KCiMjIENvbW1vbiBVc2UgQ2FzZXMKCi0gQSBwZXJzb25hbCBhc3Npc3RhbnQgdGhhdCBrZWVwcyB3b3JraW5nIHdoaWxlIHlvdXIgbGFwdG9wIGlzIGNsb3NlZCwKICByZWFjaGFibGUgZnJvbSB0aGUgd2ViIGFwcCwgdGhlIE5vZCBkZXNrdG9wIGFwcCwgVGVsZWdyYW0gb3IgV2hhdHNBcHAKLSBEYWlseSBjYWxsIGJyaWVmcyBidWlsdCBmcm9tIHlvdXIgaW5ib3gsIGNhbGVuZGFyIGFuZCB0aGUgY2xpZW50J3MKICBsYXRlc3QgbmV3cwotIEZvbGxvd2luZyB1cCBvbiB1bnBhaWQgaW52b2ljZXMsIHVuYW5zd2VyZWQgY2xpZW50IHF1ZXN0aW9ucyBhbmQKICBleHBpcmluZyB0cmlhbHMKLSBSZWN1cnJpbmcgcmVwb3J0cyBwdWxsZWQgZnJvbSBiZWhpbmQgbG9naW5zIGludG8gYSBzaGVldAotIFdhdGNoaW5nIHdlYiBwYWdlcyBhbmQgYWxlcnRpbmcgeW91IG9ubHkgd2hlbiBzb21ldGhpbmcgY2hhbmdlcwoKIyMgRGVwZW5kZW5jaWVzIGZvciBOb2QgSG9zdGluZwoKLSBBIG1vZGVsIHByb3ZpZGVyIGtleSBvciBhIENoYXRHUFQgc3Vic2NyaXB0aW9uLiBBbnRocm9waWMsIE9wZW5BSSwKICBPcGVuUm91dGVyLCBHZW1pbmksIERlZXBTZWVrLCBHcm9xLCBNaXN0cmFsIGFuZCBhYm91dCAzMCBtb3JlIHdvcmssIGFzCiAgZG8gT3BlbkFJLWNvbXBhdGlibGUgZW5kcG9pbnRzLgotIFBvc3RncmVzIChpbmNsdWRlZCkKCiMjIyBEZXBsb3ltZW50IERlcGVuZGVuY2llcwoKLSBbTm9kIHJlcG9zaXRvcnldKGh0dHBzOi8vZ2l0aHViLmNvbS9uOG4taW8vbm9kKQotIFtOb2QgZG9jdW1lbnRhdGlvbl0oaHR0cHM6Ly9ub2QubjhuLmlvL2RvY3MvKQotIFtIb3N0IHlvdXIgb3duIHNlcnZlciAodXBzdHJlYW0gZ3VpZGUpXShodHRwczovL25vZC5uOG4uaW8vZG9jcy9kZXBsb3kvc2VsZi1ob3N0LykKLSBbVGVtcGxhdGUgc291cmNlLCBpbWFnZXMgYW5kIHRlc3RzXShodHRwczovL2dpdGh1Yi5jb20vQWRlZWxBaG1lZEtoYW4vbm9kLXJhaWx3YXktdGVtcGxhdGUpCg==
+# Deploy and Host Nod on Railway
+
+Nod is an open-source personal agent from n8n Labs. It has its own Linux
+workspace and its own Chromium browser. It can chase unpaid invoices, write
+call briefs from your email and calendar, watch a pricing page and tell you
+when it changes, cancel trials, and file paperwork. It asks before it sends
+anything or acts for you. It remembers what you tell it, and you can see and
+edit every note.
+
+## About Hosting Nod
+
+Nod's own self-host setup uses Docker Compose: the server controls its
+workspace and browser containers through the host's Docker socket. Railway
+has no Docker socket, so this template runs upstream's own images as
+separate Railway services and connects them with a small, token-checked
+exec relay on the private network:
+
+- **Nod**: the server and web app, the only service with a public URL
+- **Workspace**: the Linux machine where the agent runs commands (Python,
+  Node, LibreOffice, ffmpeg, OCR, yt-dlp). Files and installed tools persist
+  across restarts and redeploys.
+- **Browser**: Chromium under a virtual display. Sites the agent signs in
+  to stay signed in.
+- **Postgres**: conversations, tasks, memory and the encrypted Vault
+
+The images are built from Nod's own Dockerfiles at a pinned release
+(0.9.0), so a redeploy never pulls a surprise upgrade. Access, Vault and
+relay secrets are generated for you at deploy time; nothing secret ships in
+the template.
+
+**Sizing, honestly**: upstream's starting point for this stack is 2 CPU
+cores, 8 GB RAM and 50 GB disk across the services (server ~2 GB, browser
+~3 GB, workspace ~2 GB). On Railway that is a Hobby plan or above and a
+real monthly cost, not a $5 toy. If you only want to try Nod, the desktop
+app on your own machine is the cheaper route; this template is for an
+always-on Nod that keeps working while your laptop is closed.
+
+## First login (a few minutes after deploy)
+
+1. Wait until all four services are green.
+2. Open the **Nod** service, go to **Variables**, and copy `NOD_AUTH_TOKEN`.
+3. Open the Nod service's public URL and paste the token into the access
+   form.
+4. Follow onboarding and connect a model. A small model such as Claude
+   Haiku or a GPT mini is plenty for most errands. Nod shows estimated
+   model costs under Usage.
+
+`NOD_PUBLIC_URL` is pre-wired to your Railway domain, so the first login
+works without editing variables. One Nod server belongs to one person.
+Anyone holding `NOD_AUTH_TOKEN` has full access to your assistant and your
+connected accounts, so treat it like a password.
+
+## Connect the desktop app
+
+In the Nod desktop app, choose **Connect to a server**, enter your Railway
+URL and `NOD_AUTH_TOKEN`. The app then uses this server's conversations,
+files, models and accounts.
+
+## Apps, Telegram and WhatsApp
+
+Open **Apps** to connect Gmail, Slack, Notion, Linear and others. Sign-in
+goes through n8n's Composio connection service and returns to your Railway
+URL. Telegram and WhatsApp are set up under **Channels**, with no variables
+needed.
+
+One manual step to expect: if you connect a ChatGPT subscription, the
+sign-in finishes on a `127.0.0.1` callback page that cannot reach this
+server. Nod shows you the address to copy from that page and paste back in;
+that is an upstream quirk of subscription sign-in, not a broken deploy.
+
+## Back up the Vault seed
+
+Saved passwords and API keys are encrypted with a key derived from
+`NOD_VAULT_SEED` on the Nod service. Keep a copy of that value somewhere
+safe, outside Railway. Never change it: if it changes, every saved
+credential becomes unreadable, and a database backup cannot recover them
+without it. You can instead set `NOD_VAULT_KEY` to your own 32-byte base64
+key, which overrides the seed.
+
+## Custom domain
+
+Attach the domain to the **Nod** service in Railway, then set
+`NOD_PUBLIC_URL` to the exact new origin (for example
+`https://nod.example.com`) and redeploy the Nod service. Nod rejects
+requests for any host other than this value, so the two must match exactly.
+
+## Trade-offs of running Nod on Railway
+
+Read these before you rely on this deploy:
+
+- **No workspace firewall.** Upstream isolates the agent's workspace
+  behind an iptables egress firewall. That needs `NET_ADMIN`, which
+  Railway does not grant, so it cannot be reproduced here: commands in the
+  workspace can reach this project's private network. Every service in the
+  template is token- or password-protected to compensate, and you should
+  keep this as a **dedicated project** — do not add unrelated services with
+  weak credentials to it.
+- **It is a cloud computer, not your computer.** The agent cannot see your
+  local files, desktop apps, local network, or a locally running model.
+  Browser sign-ins happen in the cloud Chromium and stay there, and your
+  Vault lives on Railway's infrastructure. That is the price of always-on;
+  if the local-first privacy model is the point for you, run the desktop
+  app instead.
+- **Research preview.** Nod is pre-1.0 and changes quickly. This template
+  pins one release; upgrading is deliberate (see the repo README), never
+  automatic.
+
+## Common Use Cases
+
+- A personal assistant that keeps working while your laptop is closed,
+  reachable from the web app, the Nod desktop app, Telegram or WhatsApp
+- Daily call briefs built from your inbox, calendar and the client's
+  latest news
+- Following up on unpaid invoices, unanswered client questions and
+  expiring trials
+- Recurring reports pulled from behind logins into a sheet
+- Watching web pages and alerting you only when something changes
+
+## Dependencies for Nod Hosting
+
+- A model provider key or a ChatGPT subscription. Anthropic, OpenAI,
+  OpenRouter, Gemini, DeepSeek, Groq, Mistral and about 30 more work, as
+  do OpenAI-compatible endpoints.
+- Postgres (included)
+
+### Deployment Dependencies
+
+- [Nod repository](https://github.com/n8n-io/nod)
+- [Nod documentation](https://nod.n8n.io/docs/)
+- [Host your own server (upstream guide)](https://nod.n8n.io/docs/deploy/self-host/)
+- [Template source, images and tests](https://github.com/AdeelAhmedKhan/nod-railway-template)

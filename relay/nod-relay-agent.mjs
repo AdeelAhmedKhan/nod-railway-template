@@ -1,1 +1,229 @@
-Ly8gbm9kLXJlbGF5LWFnZW50IOKAlCBSYWlsd2F5IHN0YW5kLWluIGZvciB0aGUgRG9ja2VyIGV4ZWMgY2hhbm5lbCBvZiBOb2QuCi8vCi8vIFVwc3RyZWFtIE5vZCAobjhuLWlvL25vZCwgQXBhY2hlLTIuMCkgbGV0cyBpdHMgc2VydmVyIHJ1biBjb21tYW5kcyBpbiB0aGUKLy8gd29ya3NwYWNlIGFuZCBicm93c2VyIGNvbnRhaW5lcnMgb25seSB0aHJvdWdoIGEgcmVzdHJpY3RlZCBEb2NrZXIgcHJveHkKLy8gKHVwc3RyZWFtOiBkZXBsb3ltZW50L3NlbGYtaG9zdC9kb2NrZXItcHJveHkubWpzKS4gUmFpbHdheSBzZXJ2aWNlcyBoYXZlIG5vCi8vIERvY2tlciBzb2NrZXQsIHNvIHRoZSBXb3Jrc3BhY2UgYW5kIEJyb3dzZXIgc2VydmljZXMgZWFjaCBydW4gdGhpcyBhZ2VudCBvbgovLyB0aGUgcHJpdmF0ZSBuZXR3b3JrIGluc3RlYWQuIFRoZSBzZXJ2ZXIncyBkb2NrZXIgc2hpbSBjb25uZWN0cywgcHJlc2VudHMgYQovLyBzaGFyZWQgdG9rZW4sIGFuZCByZWNlaXZlcyBkb2NrZXItZXhlYy1saWtlIHN0ZGlvIHBsdXMgYW4gZXhpdCBjb2RlIGJhY2suCi8vCi8vIFRoZSBhbGxvdyBydWxlcyBiZWxvdyBpbXBsZW1lbnQgdGhlIHNhbWUgY29udHJhY3QgYXMgdXBzdHJlYW0ncyBwcm94eToKLy8gICBicm93c2VyOiAgIHVzZXIgIm5vZGUiLCBubyB3b3JrZGlyLCBjb21tYW5kIGV4YWN0bHkgYG5vZGUgL2FwcC9icmlkZ2UubWpzYAovLyAgIHdvcmtzcGFjZTogdXNlciAibm9kZSIgaW4gL3Zhci90bXAsIG9yIGluIC93b3Jrc3BhY2UvPHRocmVhZC11dWlkPgovLyAgIHdvcmtzcGFjZTogY29ubmVjdGVkLUNMSSB1c2VycyAiPHVpZCAyeHh4eC01eHh4eD46MTAwMiIgaW4gL3Zhci90bXAgb25seQovLyBBbnl0aGluZyBlbHNlIGlzIHJlZnVzZWQuIENvbW1hbmRzIHJ1biB3aXRoIGEgc2NydWJiZWQsIGZpeGVkIGVudmlyb25tZW50Ci8vIGFuZCwgd2hlbiB0aGlzIGFnZW50IHJ1bnMgYXMgcm9vdCwgdGhyb3VnaCBzZXRwcml2IHdpdGggc3VwcGxlbWVudGFyeQovLyBncm91cHMgY2xlYXJlZCwgbm8tbmV3LXByaXZzIHNldCwgYW5kIGFuIGVtcHR5IGNhcGFiaWxpdHkgYm91bmRpbmcgc2V0LgovLwovLyBXaXJlIGZvcm1hdDogdGhlIGNsaWVudCBzZW5kcyBvbmUgSlNPTiBoZWFkZXIgbGluZQovLyB7dG9rZW4sIHVzZXIsIHdvcmtkaXIsIGNtZH0sIHRoZW4gcmF3IHN0ZGluIGJ5dGVzLCB0aGVuIGhhbGYtY2xvc2VzLgovLyBSZXBsaWVzIGFyZSBmcmFtZXMgW3R5cGUgdThdW2xlbmd0aCB1MzJiZV1bcGF5bG9hZF06Ci8vICAgMSA9IHN0ZG91dCwgMiA9IHN0ZGVyciwgMyA9IGV4aXQgKHBheWxvYWQgaXMgdGhlIGludDMyYmUgZXhpdCBjb2RlKS4KLy8gUmVmdXNhbHMgYXJlIGEgc3RkZXJyIGZyYW1lIGZvbGxvd2VkIGJ5IGFuIGV4aXQgZnJhbWUgd2l0aCBjb2RlIDEyNi4KaW1wb3J0IG5ldCBmcm9tICdub2RlOm5ldCc7CmltcG9ydCB7IHNwYXduIH0gZnJvbSAnbm9kZTpjaGlsZF9wcm9jZXNzJzsKaW1wb3J0IHsgdGltaW5nU2FmZUVxdWFsIH0gZnJvbSAnbm9kZTpjcnlwdG8nOwppbXBvcnQgeyBta2RpclN5bmMsIGNob3duU3luYyB9IGZyb20gJ25vZGU6ZnMnOwppbXBvcnQgeyBqb2luIH0gZnJvbSAnbm9kZTpwYXRoJzsKCmNvbnN0IE1PREUgPSBwcm9jZXNzLmVudi5OT0RfUkVMQVlfTU9ERTsKY29uc3QgVE9LRU4gPSBCdWZmZXIuZnJvbShwcm9jZXNzLmVudi5OT0RfUkVMQVlfVE9LRU4gfHwgJycpOwpjb25zdCBQT1JUID0gTnVtYmVyKHByb2Nlc3MuZW52Lk5PRF9SRUxBWV9QT1JUIHx8IDcwNzApOwpjb25zdCBURVNUSU5HID0gcHJvY2Vzcy5lbnYuTk9EX1JFTEFZX1RFU1QgPT09ICcxJzsKY29uc3QgV09SS1NQQUNFX1JPT1QgPSBwcm9jZXNzLmVudi5OT0RfUkVMQVlfV09SS1NQQUNFX1JPT1QgfHwgJy93b3Jrc3BhY2UnOwpjb25zdCBCUklER0VfUEFUSCA9IHByb2Nlc3MuZW52Lk5PRF9SRUxBWV9CUk9XU0VSX0JSSURHRSB8fCAnL2FwcC9icmlkZ2UubWpzJzsKY29uc3QgSEVBREVSX0xJTUlUID0gNjQgKiAxMDI0OwoKaWYgKE1PREUgIT09ICd3b3Jrc3BhY2UnICYmIE1PREUgIT09ICdicm93c2VyJykKICB0aHJvdyBuZXcgRXJyb3IoJ05PRF9SRUxBWV9NT0RFIG11c3QgYmUgIndvcmtzcGFjZSIgb3IgImJyb3dzZXIiLicpOwppZiAoVE9LRU4ubGVuZ3RoIDwgMzIpIHRocm93IG5ldyBFcnJvcignTk9EX1JFTEFZX1RPS0VOIG11c3QgYmUgYXQgbGVhc3QgMzIgY2hhcmFjdGVycy4nKTsKY29uc3QgSVNfUk9PVCA9IHR5cGVvZiBwcm9jZXNzLmdldHVpZCA9PT0gJ2Z1bmN0aW9uJyAmJiBwcm9jZXNzLmdldHVpZCgpID09PSAwOwppZiAoIUlTX1JPT1QgJiYgIVRFU1RJTkcpIHRocm93IG5ldyBFcnJvcignbm9kLXJlbGF5LWFnZW50IG11c3QgcnVuIGFzIHJvb3Qgc28gaXQgY2FuIGRyb3AgcHJpdmlsZWdlcy4nKTsKCi8vIFRoZSBleGVjdXRlZCBjb21tYW5kIG5ldmVyIHNlZXMgdGhpcyBwcm9jZXNzJ3MgZW52aXJvbm1lbnQgKHdoaWNoIGhvbGRzIHRoZQovLyByZWxheSB0b2tlbiBhbmQgcGxhdGZvcm0gdmFyaWFibGVzKS4gSXQgZ2V0cyBleGFjdGx5IHRoaXMgZml4ZWQgc2V0LCB0aGUKLy8gc2FtZSB2YWx1ZXMgdGhlIHVwc3RyZWFtIGltYWdlcyBleHBvcnQuCmNvbnN0IEJBU0VfRU5WID0KICBNT0RFID09PSAnd29ya3NwYWNlJwogICAgPyB7CiAgICAgICAgUEFUSDogJy9vcHQvbm9kLWFydGlmYWN0cy9iaW46L2hvbWUvbm9kZS8ubG9jYWwvYmluOi91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbicsCiAgICAgICAgTEFORzogJ0MuVVRGLTgnLAogICAgICAgIE5QTV9DT05GSUdfUFJFRklYOiAnL2hvbWUvbm9kZS8ubG9jYWwnLAogICAgICAgIFBJUFhfSE9NRTogJy9ob21lL25vZGUvLmxvY2FsL3BpcHgnLAogICAgICAgIFBJUFhfQklOX0RJUjogJy9ob21lL25vZGUvLmxvY2FsL2JpbicsCiAgICAgIH0KICAgIDogewogICAgICAgIFBBVEg6ICcvdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4nLAogICAgICAgIExBTkc6ICdDLlVURi04JywKICAgICAgfTsKaWYgKFRFU1RJTkcgJiYgcHJvY2Vzcy5lbnYuTk9EX1JFTEFZX1RFU1RfUEFUSCkgQkFTRV9FTlYuUEFUSCA9IHByb2Nlc3MuZW52Lk5PRF9SRUxBWV9URVNUX1BBVEg7Cgpjb25zdCBOT0RFX1VJRCA9IDEwMDA7CmNvbnN0IE5PREVfR0lEID0gMTAwMDsKY29uc3QgVEhSRUFEX1dPUktESVIgPSAvXlwvd29ya3NwYWNlXC9bMC05YS1mLV17MzZ9JC87CmNvbnN0IENPTk5FQ1RFRF9VU0VSID0gL14oWzItNV1cZHs0fSk6MTAwMiQvOwoKLy8gUmV0dXJucyBhIHJlZnVzYWwgc3RyaW5nLCBvciBhbiBleGVjdXRpb24gcGxhbgovLyB7ZmlsZSwgYXJncywgdWlkLCBnaWQsIGN3ZCwgaG9tZSwgY3JlYXRlRGlyfS4KZnVuY3Rpb24gYXV0aG9yaXplKGhlYWRlcikgewogIGNvbnN0IHByZXNlbnRlZCA9IEJ1ZmZlci5mcm9tKHR5cGVvZiBoZWFkZXI/LnRva2VuID09PSAnc3RyaW5nJyA/IGhlYWRlci50b2tlbiA6ICcnKTsKICBpZiAocHJlc2VudGVkLmxlbmd0aCAhPT0gVE9LRU4ubGVuZ3RoIHx8ICF0aW1pbmdTYWZlRXF1YWwocHJlc2VudGVkLCBUT0tFTikpIHJldHVybiAnYmFkIHRva2VuJzsKICBjb25zdCB7IHVzZXIsIHdvcmtkaXIsIGNtZCB9ID0gaGVhZGVyID8/IHt9OwogIGlmICghQXJyYXkuaXNBcnJheShjbWQpIHx8IGNtZC5sZW5ndGggPT09IDAgfHwgY21kLnNvbWUoKHApID0+IHR5cGVvZiBwICE9PSAnc3RyaW5nJyB8fCBwLmxlbmd0aCA9PT0gMCB8fCBwLmluY2x1ZGVzKCdcMCcpKSkKICAgIHJldHVybiAnYmFkIGNvbW1hbmQnOwoKICBpZiAoTU9ERSA9PT0gJ2Jyb3dzZXInKSB7CiAgICBpZiAodXNlciAhPT0gJ25vZGUnKSByZXR1cm4gJ2Jyb3dzZXIgY29tbWFuZHMgcnVuIGFzIG5vZGUgb25seSc7CiAgICBpZiAod29ya2RpciAhPT0gdW5kZWZpbmVkICYmIHdvcmtkaXIgIT09ICcnKSByZXR1cm4gJ2Jyb3dzZXIgY29tbWFuZHMgaGF2ZSBubyB3b3JrZGlyJzsKICAgIGlmIChjbWQubGVuZ3RoICE9PSAyIHx8IGNtZFswXSAhPT0gJ25vZGUnIHx8IGNtZFsxXSAhPT0gJy9hcHAvYnJpZGdlLm1qcycpCiAgICAgIHJldHVybiAnYnJvd3NlciBydW5zIHRoZSBicmlkZ2Ugb25seSc7CiAgICByZXR1cm4gewogICAgICBmaWxlOiBURVNUSU5HID8gcHJvY2Vzcy5leGVjUGF0aCA6ICdub2RlJywKICAgICAgYXJnczogW0JSSURHRV9QQVRIXSwKICAgICAgdWlkOiBOT0RFX1VJRCwKICAgICAgZ2lkOiBOT0RFX0dJRCwKICAgICAgY3dkOiBURVNUSU5HID8gdW5kZWZpbmVkIDogJy9hcHAnLAogICAgICBob21lOiAnL2hvbWUvbm9kZScsCiAgICB9OwogIH0KCiAgLy8gd29ya3NwYWNlIG1vZGUKICBpZiAodXNlciA9PT0gJ25vZGUnKSB7CiAgICBpZiAod29ya2RpciA9PT0gJy92YXIvdG1wJykKICAgICAgcmV0dXJuIHsgZmlsZTogY21kWzBdLCBhcmdzOiBjbWQuc2xpY2UoMSksIHVpZDogTk9ERV9VSUQsIGdpZDogTk9ERV9HSUQsIGN3ZDogJy92YXIvdG1wJywgaG9tZTogJy9ob21lL25vZGUnIH07CiAgICBpZiAodHlwZW9mIHdvcmtkaXIgIT09ICdzdHJpbmcnIHx8ICFUSFJFQURfV09SS0RJUi50ZXN0KHdvcmtkaXIpKQogICAgICByZXR1cm4gJ3dvcmtkaXIgbXVzdCBiZSBhIHRocmVhZCB3b3Jrc3BhY2Ugb3IgL3Zhci90bXAnOwogICAgcmV0dXJuIHsKICAgICAgZmlsZTogY21kWzBdLAogICAgICBhcmdzOiBjbWQuc2xpY2UoMSksCiAgICAgIHVpZDogTk9ERV9VSUQsCiAgICAgIGdpZDogTk9ERV9HSUQsCiAgICAgIGN3ZDogam9pbihXT1JLU1BBQ0VfUk9PVCwgd29ya2Rpci5zbGljZSgnL3dvcmtzcGFjZS8nLmxlbmd0aCkpLAogICAgICBob21lOiAnL2hvbWUvbm9kZScsCiAgICAgIGNyZWF0ZURpcjogdHJ1ZSwKICAgIH07CiAgfQogIGNvbnN0IGNvbm5lY3RlZCA9IENPTk5FQ1RFRF9VU0VSLmV4ZWModHlwZW9mIHVzZXIgPT09ICdzdHJpbmcnID8gdXNlciA6ICcnKTsKICBpZiAoIWNvbm5lY3RlZCkgcmV0dXJuICd1bmtub3duIHVzZXInOwogIGlmICh3b3JrZGlyICE9PSAnL3Zhci90bXAnKSByZXR1cm4gJ2Nvbm5lY3RlZCBDTElzIHJ1biBpbiAvdmFyL3RtcCBvbmx5JzsKICByZXR1cm4gewogICAgZmlsZTogY21kWzBdLAogICAgYXJnczogY21kLnNsaWNlKDEpLAogICAgdWlkOiBOdW1iZXIoY29ubmVjdGVkWzFdKSwKICAgIGdpZDogMTAwMiwKICAgIGN3ZDogJy92YXIvdG1wJywKICAgIGhvbWU6ICcvJywKICB9Owp9CgovLyBCdWlsZHMgdGhlIGFyZ3YgdGhhdCBydW5zIHRoZSBwbGFuIHdpdGggYSBzY3J1YmJlZCBlbnZpcm9ubWVudCBhbmQsIGFzCi8vIHJvb3QsIGRyb3BwZWQgcHJpdmlsZWdlczogbm8gc3VwcGxlbWVudGFyeSBncm91cHMsIG5vIG5ldyBwcml2aWxlZ2VzLCBubwovLyBjYXBhYmlsaXRpZXMuIEZhbGxzIGJhY2sgdG8gYSBwbGFpbiBzcGF3biB3aGVuIHNldHByaXYgaXMgdW5hdmFpbGFibGUKLy8gKHRlc3QgbWFjaGluZXMpLCB3aGljaCB0aGUgdGVzdHMgZGV0ZWN0IGFuZCBza2lwIHRoZSBoYXJkZW5pbmcgY2hlY2tzIGZvci4KZnVuY3Rpb24gYnVpbGRBcmd2KHBsYW4pIHsKICBjb25zdCBlbnZBcmdzID0gT2JqZWN0LmVudHJpZXMoeyAuLi5CQVNFX0VOViwgSE9NRTogcGxhbi5ob21lIH0pLm1hcCgoW2ssIHZdKSA9PiBgJHtrfT0ke3Z9YCk7CiAgY29uc3QgY29tbWFuZCA9IFsnL3Vzci9iaW4vZW52JywgJy1pJywgLi4uZW52QXJncywgcGxhbi5maWxlLCAuLi5wbGFuLmFyZ3NdOwogIGlmICghSVNfUk9PVCkgcmV0dXJuIGNvbW1hbmQ7CiAgcmV0dXJuIFsKICAgICcvdXNyL2Jpbi9zZXRwcml2JywKICAgICctLXJldWlkJywgU3RyaW5nKHBsYW4udWlkKSwKICAgICctLXJlZ2lkJywgU3RyaW5nKHBsYW4uZ2lkKSwKICAgICctLWNsZWFyLWdyb3VwcycsCiAgICAnLS1uby1uZXctcHJpdnMnLAogICAgJy0tYm91bmRpbmctc2V0PS1hbGwnLAogICAgLi4uY29tbWFuZCwKICBdOwp9CgpmdW5jdGlvbiBmcmFtZSh0eXBlLCBwYXlsb2FkKSB7CiAgY29uc3QgaGVhZCA9IEJ1ZmZlci5hbGxvYyg1KTsKICBoZWFkLndyaXRlVUludDgodHlwZSwgMCk7CiAgaGVhZC53cml0ZVVJbnQzMkJFKHBheWxvYWQubGVuZ3RoLCAxKTsKICByZXR1cm4gQnVmZmVyLmNvbmNhdChbaGVhZCwgcGF5bG9hZF0pOwp9CmZ1bmN0aW9uIGV4aXRGcmFtZShjb2RlKSB7CiAgY29uc3QgYiA9IEJ1ZmZlci5hbGxvYyg0KTsKICBiLndyaXRlSW50MzJCRShjb2RlKTsKICByZXR1cm4gZnJhbWUoMywgYik7Cn0KY29uc3QgU0lHTkFMX05VTUJFUlMgPSB7IFNJR0hVUDogMSwgU0lHSU5UOiAyLCBTSUdLSUxMOiA5LCBTSUdURVJNOiAxNSB9OwoKY29uc3Qgc2VydmVyID0gbmV0LmNyZWF0ZVNlcnZlcih7IGFsbG93SGFsZk9wZW46IHRydWUgfSwgKHNvY2tldCkgPT4gewogIHNvY2tldC5zZXRLZWVwQWxpdmUodHJ1ZSwgMTVfMDAwKTsKICBsZXQgYnVmZmVyZWQgPSBCdWZmZXIuYWxsb2MoMCk7CiAgbGV0IGNoaWxkID0gbnVsbDsKICBsZXQgZmluaXNoZWQgPSBmYWxzZTsKCiAgY29uc3QgcmVmdXNlID0gKHdoeSkgPT4gewogICAgZmluaXNoZWQgPSB0cnVlOwogICAgc29ja2V0LmVuZChCdWZmZXIuY29uY2F0KFtmcmFtZSgyLCBCdWZmZXIuZnJvbShgbm9kLXJlbGF5OiByZWZ1c2VkOiAke3doeX1cbmApKSwgZXhpdEZyYW1lKDEyNildKSk7CiAgfTsKCiAgc29ja2V0Lm9uKCdkYXRhJywgKGNodW5rKSA9PiB7CiAgICBpZiAoY2hpbGQpIHsKICAgICAgaWYgKCFjaGlsZC5zdGRpbi53cml0ZShjaHVuaykpIHsKICAgICAgICBzb2NrZXQucGF1c2UoKTsKICAgICAgICBjaGlsZC5zdGRpbi5vbmNlKCdkcmFpbicsICgpID0+IHNvY2tldC5yZXN1bWUoKSk7CiAgICAgIH0KICAgICAgcmV0dXJuOwogICAgfQogICAgYnVmZmVyZWQgPSBCdWZmZXIuY29uY2F0KFtidWZmZXJlZCwgY2h1bmtdKTsKICAgIGNvbnN0IG5ld2xpbmUgPSBidWZmZXJlZC5pbmRleE9mKDEwKTsKICAgIGlmIChuZXdsaW5lIDwgMCkgewogICAgICBpZiAoYnVmZmVyZWQubGVuZ3RoID4gSEVBREVSX0xJTUlUKSByZWZ1c2UoJ2hlYWRlciB0b28gbGFyZ2UnKTsKICAgICAgcmV0dXJuOwogICAgfQogICAgbGV0IGhlYWRlcjsKICAgIHRyeSB7CiAgICAgIGhlYWRlciA9IEpTT04ucGFyc2UoYnVmZmVyZWQuc3ViYXJyYXkoMCwgbmV3bGluZSkudG9TdHJpbmcoJ3V0ZjgnKSk7CiAgICB9IGNhdGNoIHsKICAgICAgcmV0dXJuIHJlZnVzZSgnYmFkIGhlYWRlcicpOwogICAgfQogICAgY29uc3QgcmVzdCA9IGJ1ZmZlcmVkLnN1YmFycmF5KG5ld2xpbmUgKyAxKTsKICAgIGNvbnN0IHBsYW4gPSBhdXRob3JpemUoaGVhZGVyKTsKICAgIGlmICh0eXBlb2YgcGxhbiA9PT0gJ3N0cmluZycpIHJldHVybiByZWZ1c2UocGxhbik7CiAgICB0cnkgewogICAgICBpZiAocGxhbi5jcmVhdGVEaXIpIHsKICAgICAgICBta2RpclN5bmMocGxhbi5jd2QsIHsgcmVjdXJzaXZlOiB0cnVlLCBtb2RlOiAwbzcwMCB9KTsKICAgICAgICBpZiAoSVNfUk9PVCkgY2hvd25TeW5jKHBsYW4uY3dkLCBwbGFuLnVpZCwgcGxhbi5naWQpOwogICAgICB9CiAgICAgIGNvbnN0IGFyZ3YgPSBidWlsZEFyZ3YocGxhbik7CiAgICAgIGNoaWxkID0gc3Bhd24oYXJndlswXSwgYXJndi5zbGljZSgxKSwgewogICAgICAgIGN3ZDogcGxhbi5jd2QsCiAgICAgICAgZW52OiB7fSwgLy8gZW52IGlzIHNldCBieSBgZW52IC1pYCBpbiBhcmd2OyBrZWVwIG5vZGUncyBvd24gZW52IG91dAogICAgICAgIGRldGFjaGVkOiB0cnVlLAogICAgICAgIHN0ZGlvOiBbJ3BpcGUnLCAncGlwZScsICdwaXBlJ10sCiAgICAgIH0pOwogICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgcmV0dXJuIHJlZnVzZShgc3Bhd24gZmFpbGVkOiAke2Vycm9yLm1lc3NhZ2V9YCk7CiAgICB9CiAgICBjaGlsZC5zdGRpbi5vbignZXJyb3InLCAoKSA9PiB7fSk7CiAgICBjaGlsZC5zdGRvdXQub24oJ2RhdGEnLCAoZCkgPT4gc29ja2V0LndyaXRlKGZyYW1lKDEsIGQpKSk7CiAgICBjaGlsZC5zdGRlcnIub24oJ2RhdGEnLCAoZCkgPT4gc29ja2V0LndyaXRlKGZyYW1lKDIsIGQpKSk7CiAgICBjaGlsZC5vbignZXJyb3InLCAoZXJyb3IpID0+IHsKICAgICAgaWYgKGZpbmlzaGVkKSByZXR1cm47CiAgICAgIGZpbmlzaGVkID0gdHJ1ZTsKICAgICAgc29ja2V0LmVuZChCdWZmZXIuY29uY2F0KFtmcmFtZSgyLCBCdWZmZXIuZnJvbShgbm9kLXJlbGF5OiAke2Vycm9yLm1lc3NhZ2V9XG5gKSksIGV4aXRGcmFtZSgxMjcpXSkpOwogICAgfSk7CiAgICBjaGlsZC5vbignY2xvc2UnLCAoY29kZSwgc2lnbmFsKSA9PiB7CiAgICAgIGlmIChmaW5pc2hlZCkgcmV0dXJuOwogICAgICBmaW5pc2hlZCA9IHRydWU7CiAgICAgIHNvY2tldC5lbmQoZXhpdEZyYW1lKGNvZGUgPz8gMTI4ICsgKFNJR05BTF9OVU1CRVJTW3NpZ25hbF0gPz8gMSkpKTsKICAgIH0pOwogICAgaWYgKHJlc3QubGVuZ3RoKSBjaGlsZC5zdGRpbi53cml0ZShyZXN0KTsKICB9KTsKICBzb2NrZXQub24oJ2VuZCcsICgpID0+IGNoaWxkPy5zdGRpbi5lbmQoKSk7CiAgc29ja2V0Lm9uKCdlcnJvcicsICgpID0+IHt9KTsKICBzb2NrZXQub24oJ2Nsb3NlJywgKCkgPT4gewogICAgaWYgKGNoaWxkICYmIGNoaWxkLmV4aXRDb2RlID09PSBudWxsICYmIGNoaWxkLnNpZ25hbENvZGUgPT09IG51bGwpIHsKICAgICAgdHJ5IHsKICAgICAgICBwcm9jZXNzLmtpbGwoLWNoaWxkLnBpZCwgJ1NJR0tJTEwnKTsKICAgICAgfSBjYXRjaCB7fQogICAgfQogIH0pOwp9KTsKCnNlcnZlci5saXN0ZW4oeyBwb3J0OiBQT1JULCBob3N0OiAnOjonLCBpcHY2T25seTogZmFsc2UgfSwgKCkgPT4gewogIGNvbnNvbGUubG9nKGBub2QtcmVsYXktYWdlbnQgKCR7TU9ERX0pIGxpc3RlbmluZyBvbiBbOjpdOiR7UE9SVH1gKTsKfSk7CmZvciAoY29uc3Qgc2lnbmFsIG9mIFsnU0lHVEVSTScsICdTSUdJTlQnXSkgcHJvY2Vzcy5vbihzaWduYWwsICgpID0+IHByb2Nlc3MuZXhpdCgwKSk7Cg==
+// nod-relay-agent — Railway stand-in for the Docker exec channel of Nod.
+//
+// Upstream Nod (n8n-io/nod, Apache-2.0) lets its server run commands in the
+// workspace and browser containers only through a restricted Docker proxy
+// (upstream: deployment/self-host/docker-proxy.mjs). Railway services have no
+// Docker socket, so the Workspace and Browser services each run this agent on
+// the private network instead. The server's docker shim connects, presents a
+// shared token, and receives docker-exec-like stdio plus an exit code back.
+//
+// The allow rules below implement the same contract as upstream's proxy:
+//   browser:   user "node", no workdir, command exactly `node /app/bridge.mjs`
+//   workspace: user "node" in /var/tmp, or in /workspace/<thread-uuid>
+//   workspace: connected-CLI users "<uid 2xxxx-5xxxx>:1002" in /var/tmp only
+// Anything else is refused. Commands run with a scrubbed, fixed environment
+// and, when this agent runs as root, through setpriv with supplementary
+// groups cleared, no-new-privs set, and an empty capability bounding set.
+//
+// Wire format: the client sends one JSON header line
+// {token, user, workdir, cmd}, then raw stdin bytes, then half-closes.
+// Replies are frames [type u8][length u32be][payload]:
+//   1 = stdout, 2 = stderr, 3 = exit (payload is the int32be exit code).
+// Refusals are a stderr frame followed by an exit frame with code 126.
+import net from 'node:net';
+import { spawn } from 'node:child_process';
+import { timingSafeEqual } from 'node:crypto';
+import { mkdirSync, chownSync } from 'node:fs';
+import { join } from 'node:path';
+
+const MODE = process.env.NOD_RELAY_MODE;
+const TOKEN = Buffer.from(process.env.NOD_RELAY_TOKEN || '');
+const PORT = Number(process.env.NOD_RELAY_PORT || 7070);
+const TESTING = process.env.NOD_RELAY_TEST === '1';
+const WORKSPACE_ROOT = process.env.NOD_RELAY_WORKSPACE_ROOT || '/workspace';
+const BRIDGE_PATH = process.env.NOD_RELAY_BROWSER_BRIDGE || '/app/bridge.mjs';
+const HEADER_LIMIT = 64 * 1024;
+
+if (MODE !== 'workspace' && MODE !== 'browser')
+  throw new Error('NOD_RELAY_MODE must be "workspace" or "browser".');
+if (TOKEN.length < 32) throw new Error('NOD_RELAY_TOKEN must be at least 32 characters.');
+const IS_ROOT = typeof process.getuid === 'function' && process.getuid() === 0;
+if (!IS_ROOT && !TESTING) throw new Error('nod-relay-agent must run as root so it can drop privileges.');
+
+// The executed command never sees this process's environment (which holds the
+// relay token and platform variables). It gets exactly this fixed set, the
+// same values the upstream images export.
+const BASE_ENV =
+  MODE === 'workspace'
+    ? {
+        PATH: '/opt/nod-artifacts/bin:/home/node/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+        LANG: 'C.UTF-8',
+        NPM_CONFIG_PREFIX: '/home/node/.local',
+        PIPX_HOME: '/home/node/.local/pipx',
+        PIPX_BIN_DIR: '/home/node/.local/bin',
+      }
+    : {
+        PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+        LANG: 'C.UTF-8',
+      };
+if (TESTING && process.env.NOD_RELAY_TEST_PATH) BASE_ENV.PATH = process.env.NOD_RELAY_TEST_PATH;
+
+const NODE_UID = 1000;
+const NODE_GID = 1000;
+const THREAD_WORKDIR = /^\/workspace\/[0-9a-f-]{36}$/;
+const CONNECTED_USER = /^([2-5]\d{4}):1002$/;
+
+// Returns a refusal string, or an execution plan
+// {file, args, uid, gid, cwd, home, createDir}.
+function authorize(header) {
+  const presented = Buffer.from(typeof header?.token === 'string' ? header.token : '');
+  if (presented.length !== TOKEN.length || !timingSafeEqual(presented, TOKEN)) return 'bad token';
+  const { user, workdir, cmd } = header ?? {};
+  if (!Array.isArray(cmd) || cmd.length === 0 || cmd.some((p) => typeof p !== 'string' || p.length === 0 || p.includes('\0')))
+    return 'bad command';
+
+  if (MODE === 'browser') {
+    if (user !== 'node') return 'browser commands run as node only';
+    if (workdir !== undefined && workdir !== '') return 'browser commands have no workdir';
+    if (cmd.length !== 2 || cmd[0] !== 'node' || cmd[1] !== '/app/bridge.mjs')
+      return 'browser runs the bridge only';
+    return {
+      file: TESTING ? process.execPath : 'node',
+      args: [BRIDGE_PATH],
+      uid: NODE_UID,
+      gid: NODE_GID,
+      cwd: TESTING ? undefined : '/app',
+      home: '/home/node',
+    };
+  }
+
+  // workspace mode
+  if (user === 'node') {
+    if (workdir === '/var/tmp')
+      return { file: cmd[0], args: cmd.slice(1), uid: NODE_UID, gid: NODE_GID, cwd: '/var/tmp', home: '/home/node' };
+    if (typeof workdir !== 'string' || !THREAD_WORKDIR.test(workdir))
+      return 'workdir must be a thread workspace or /var/tmp';
+    return {
+      file: cmd[0],
+      args: cmd.slice(1),
+      uid: NODE_UID,
+      gid: NODE_GID,
+      cwd: join(WORKSPACE_ROOT, workdir.slice('/workspace/'.length)),
+      home: '/home/node',
+      createDir: true,
+    };
+  }
+  const connected = CONNECTED_USER.exec(typeof user === 'string' ? user : '');
+  if (!connected) return 'unknown user';
+  if (workdir !== '/var/tmp') return 'connected CLIs run in /var/tmp only';
+  return {
+    file: cmd[0],
+    args: cmd.slice(1),
+    uid: Number(connected[1]),
+    gid: 1002,
+    cwd: '/var/tmp',
+    home: '/',
+  };
+}
+
+// Builds the argv that runs the plan with a scrubbed environment and, as
+// root, dropped privileges: no supplementary groups, no new privileges, no
+// capabilities. Falls back to a plain spawn when setpriv is unavailable
+// (test machines), which the tests detect and skip the hardening checks for.
+function buildArgv(plan) {
+  const envArgs = Object.entries({ ...BASE_ENV, HOME: plan.home }).map(([k, v]) => `${k}=${v}`);
+  const command = ['/usr/bin/env', '-i', ...envArgs, plan.file, ...plan.args];
+  if (!IS_ROOT) return command;
+  return [
+    '/usr/bin/setpriv',
+    '--reuid', String(plan.uid),
+    '--regid', String(plan.gid),
+    '--clear-groups',
+    '--no-new-privs',
+    '--bounding-set=-all',
+    ...command,
+  ];
+}
+
+function frame(type, payload) {
+  const head = Buffer.alloc(5);
+  head.writeUInt8(type, 0);
+  head.writeUInt32BE(payload.length, 1);
+  return Buffer.concat([head, payload]);
+}
+function exitFrame(code) {
+  const b = Buffer.alloc(4);
+  b.writeInt32BE(code);
+  return frame(3, b);
+}
+const SIGNAL_NUMBERS = { SIGHUP: 1, SIGINT: 2, SIGKILL: 9, SIGTERM: 15 };
+
+const server = net.createServer({ allowHalfOpen: true }, (socket) => {
+  socket.setKeepAlive(true, 15_000);
+  let buffered = Buffer.alloc(0);
+  let child = null;
+  let finished = false;
+
+  const refuse = (why) => {
+    finished = true;
+    socket.end(Buffer.concat([frame(2, Buffer.from(`nod-relay: refused: ${why}\n`)), exitFrame(126)]));
+  };
+
+  socket.on('data', (chunk) => {
+    if (child) {
+      if (!child.stdin.write(chunk)) {
+        socket.pause();
+        child.stdin.once('drain', () => socket.resume());
+      }
+      return;
+    }
+    buffered = Buffer.concat([buffered, chunk]);
+    const newline = buffered.indexOf(10);
+    if (newline < 0) {
+      if (buffered.length > HEADER_LIMIT) refuse('header too large');
+      return;
+    }
+    let header;
+    try {
+      header = JSON.parse(buffered.subarray(0, newline).toString('utf8'));
+    } catch {
+      return refuse('bad header');
+    }
+    const rest = buffered.subarray(newline + 1);
+    const plan = authorize(header);
+    if (typeof plan === 'string') return refuse(plan);
+    try {
+      if (plan.createDir) {
+        mkdirSync(plan.cwd, { recursive: true, mode: 0o700 });
+        if (IS_ROOT) chownSync(plan.cwd, plan.uid, plan.gid);
+      }
+      const argv = buildArgv(plan);
+      child = spawn(argv[0], argv.slice(1), {
+        cwd: plan.cwd,
+        env: {}, // env is set by `env -i` in argv; keep node's own env out
+        detached: true,
+        stdio: ['pipe', 'pipe', 'pipe'],
+      });
+    } catch (error) {
+      return refuse(`spawn failed: ${error.message}`);
+    }
+    child.stdin.on('error', () => {});
+    child.stdout.on('data', (d) => socket.write(frame(1, d)));
+    child.stderr.on('data', (d) => socket.write(frame(2, d)));
+    child.on('error', (error) => {
+      if (finished) return;
+      finished = true;
+      socket.end(Buffer.concat([frame(2, Buffer.from(`nod-relay: ${error.message}\n`)), exitFrame(127)]));
+    });
+    child.on('close', (code, signal) => {
+      if (finished) return;
+      finished = true;
+      socket.end(exitFrame(code ?? 128 + (SIGNAL_NUMBERS[signal] ?? 1)));
+    });
+    if (rest.length) child.stdin.write(rest);
+  });
+  socket.on('end', () => child?.stdin.end());
+  socket.on('error', () => {});
+  socket.on('close', () => {
+    if (child && child.exitCode === null && child.signalCode === null) {
+      try {
+        process.kill(-child.pid, 'SIGKILL');
+      } catch {}
+    }
+  });
+});
+
+server.listen({ port: PORT, host: '::', ipv6Only: false }, () => {
+  console.log(`nod-relay-agent (${MODE}) listening on [::]:${PORT}`);
+});
+for (const signal of ['SIGTERM', 'SIGINT']) process.on(signal, () => process.exit(0));

@@ -1,1 +1,2 @@
-Ly8gVGVzdCBzdGFuZC1pbiBmb3IgdXBzdHJlYW0ncyAvYXBwL2JyaWRnZS5tanM6IGVjaG9lcyBzdGRpbiBiYWNrIGFuZCBleGl0cyAwLgpwcm9jZXNzLnN0ZGluLnBpcGUocHJvY2Vzcy5zdGRvdXQpOwo=
+// Test stand-in for upstream's /app/bridge.mjs: echoes stdin back and exits 0.
+process.stdin.pipe(process.stdout);

@@ -1,1 +1,16 @@
-IyEvYmluL3NoCiMgUnVucyB1cHN0cmVhbSdzIGJyb3dzZXIgd29ya2VyIGFzIG5vZGUgYW5kIHRoZSByZWxheSBhZ2VudCBhcyByb290LiBJZgojIGVpdGhlciBwcm9jZXNzIGV4aXRzLCB0aGUgY29udGFpbmVyIGV4aXRzIHNvIFJhaWx3YXkgcmVzdGFydHMgdGhlIHNlcnZpY2UuCnNldCAtZXUKY2hvd24gbm9kZTpub2RlIC9kYXRhCmNobW9kIDcwMCAvZGF0YQpybSAtZiAvZGF0YS9jb250cm9sLnNvY2sKIyBUaGUgd29ya2VyIG5ldmVyIG5lZWRzIHRoZSByZWxheSB0b2tlbjsgc3RyaXAgaXQgZnJvbSBpdHMgZW52aXJvbm1lbnQuCmVudiAtdSBOT0RfUkVMQVlfVE9LRU4gc2V0cHJpdiAtLXJldWlkPW5vZGUgLS1yZWdpZD1ub2RlIC0taW5pdC1ncm91cHMgZW52IEhPTUU9L2hvbWUvbm9kZSBub2RlIC9hcHAvd29ya2VyLm1qcyAmCndvcmtlcj0kIQpub2RlIC9vcHQvbm9kLXJlbGF5L25vZC1yZWxheS1hZ2VudC5tanMgJgphZ2VudD0kIQp0cmFwICdraWxsICR3b3JrZXIgJGFnZW50IDI+L2Rldi9udWxsOyBleGl0IDAnIFRFUk0gSU5UCndoaWxlIGtpbGwgLTAgJHdvcmtlciAyPi9kZXYvbnVsbCAmJiBraWxsIC0wICRhZ2VudCAyPi9kZXYvbnVsbDsgZG8gc2xlZXAgNTsgZG9uZQpraWxsICR3b3JrZXIgJGFnZW50IDI+L2Rldi9udWxsIHx8IHRydWUKZXhpdCAxCg==
+#!/bin/sh
+# Runs upstream's browser worker as node and the relay agent as root. If
+# either process exits, the container exits so Railway restarts the service.
+set -eu
+chown node:node /data
+chmod 700 /data
+rm -f /data/control.sock
+# The worker never needs the relay token; strip it from its environment.
+env -u NOD_RELAY_TOKEN setpriv --reuid=node --regid=node --init-groups env HOME=/home/node node /app/worker.mjs &
+worker=$!
+node /opt/nod-relay/nod-relay-agent.mjs &
+agent=$!
+trap 'kill $worker $agent 2>/dev/null; exit 0' TERM INT
+while kill -0 $worker 2>/dev/null && kill -0 $agent 2>/dev/null; do sleep 5; done
+kill $worker $agent 2>/dev/null || true
+exit 1

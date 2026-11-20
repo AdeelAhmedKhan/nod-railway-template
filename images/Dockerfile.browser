@@ -1,1 +1,11 @@
-IyBOb2QgYnJvd3NlciBmb3IgUmFpbHdheTogdXBzdHJlYW0gRG9ja2VyZmlsZS5icm93c2VyIHBsdXMgdGhlIHJlbGF5IGFnZW50LgojIFRoZSBicm93c2VyIHByb2ZpbGUgYW5kIHNpZ24taW5zIHBlcnNpc3Qgb24gdGhlIC9kYXRhIHZvbHVtZS4KQVJHIEJBU0U9bm9kLWJhc2UtYnJvd3NlcgpGUk9NICR7QkFTRX0KVVNFUiByb290CiMgdXRpbC1saW51eCBwcm92aWRlcyBzZXRwcml2LCB1c2VkIGJ5IHRoZSBlbnRyeSBzY3JpcHQgdG8gZHJvcCB0byBub2RlLgpSVU4gYXB0LWdldCB1cGRhdGUgJiYgYXB0LWdldCBpbnN0YWxsIC15IC0tbm8taW5zdGFsbC1yZWNvbW1lbmRzIHV0aWwtbGludXggJiYgcm0gLXJmIC92YXIvbGliL2FwdC9saXN0cy8qCkNPUFkgLS1jaG1vZD00NDQgcmVsYXkvbm9kLXJlbGF5LWFnZW50Lm1qcyAvb3B0L25vZC1yZWxheS9ub2QtcmVsYXktYWdlbnQubWpzCkNPUFkgLS1jaG1vZD01NTUgaW1hZ2VzL2Jyb3dzZXItZW50cnkuc2ggL3Vzci9sb2NhbC9iaW4vbm9kLXJhaWx3YXktYnJvd3NlcgpFTlYgTk9EX1JFTEFZX01PREU9YnJvd3NlcgpDTUQgWyIvdXNyL2xvY2FsL2Jpbi9ub2QtcmFpbHdheS1icm93c2VyIl0K
+# Nod browser for Railway: upstream Dockerfile.browser plus the relay agent.
+# The browser profile and sign-ins persist on the /data volume.
+ARG BASE=nod-base-browser
+FROM ${BASE}
+USER root
+# util-linux provides setpriv, used by the entry script to drop to node.
+RUN apt-get update && apt-get install -y --no-install-recommends util-linux && rm -rf /var/lib/apt/lists/*
+COPY --chmod=444 relay/nod-relay-agent.mjs /opt/nod-relay/nod-relay-agent.mjs
+COPY --chmod=555 images/browser-entry.sh /usr/local/bin/nod-railway-browser
+ENV NOD_RELAY_MODE=browser
+CMD ["/usr/local/bin/nod-railway-browser"]

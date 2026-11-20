@@ -1,1 +1,13 @@
-IyEvYmluL3NoCiMgUHJlcGFyZXMgdGhlIHNpbmdsZSAvd29ya3NwYWNlIHZvbHVtZSwgdGhlbiBydW5zIHRoZSByZWxheSBhZ2VudCBhcyByb290LgojIEV2ZXJ5IGNvbW1hbmQgdGhlIGFnZW50IGV4ZWN1dGVzIGRyb3BzIHByaXZpbGVnZXMgaXRzZWxmIChzZXRwcml2KSwgc28KIyB0aGUgYWdlbnQgaXMgdGhlIG9ubHkgcm9vdCBwcm9jZXNzIGluIHRoZSBzZXJ2aWNlLgpzZXQgLWV1Cm1rZGlyIC1wIC93b3Jrc3BhY2UvLm5vZC1ob21lCmlmIFsgISAtZSAvd29ya3NwYWNlLy5ub2QtaG9tZS8ubG9jYWwgXTsgdGhlbgogIGNwIC1hIC9vcHQvbm9kLWhvbWUtc2tlbC8uIC93b3Jrc3BhY2UvLm5vZC1ob21lLwpmaQpjaG93biBub2RlOm5vZGUgL3dvcmtzcGFjZSAvd29ya3NwYWNlLy5ub2QtaG9tZQpjaG1vZCA3NTUgL3dvcmtzcGFjZQpjaG1vZCA3MDAgL3dvcmtzcGFjZS8ubm9kLWhvbWUKZXhlYyBub2RlIC9vcHQvbm9kLXJlbGF5L25vZC1yZWxheS1hZ2VudC5tanMK
+#!/bin/sh
+# Prepares the single /workspace volume, then runs the relay agent as root.
+# Every command the agent executes drops privileges itself (setpriv), so
+# the agent is the only root process in the service.
+set -eu
+mkdir -p /workspace/.nod-home
+if [ ! -e /workspace/.nod-home/.local ]; then
+  cp -a /opt/nod-home-skel/. /workspace/.nod-home/
+fi
+chown node:node /workspace /workspace/.nod-home
+chmod 755 /workspace
+chmod 700 /workspace/.nod-home
+exec node /opt/nod-relay/nod-relay-agent.mjs

@@ -1,1 +1,12 @@
-IyBOb2Qgc2VydmVyIGZvciBSYWlsd2F5OiB1cHN0cmVhbSBkZXBsb3ltZW50L3NlbGYtaG9zdC9Eb2NrZXJmaWxlIHBsdXMgdGhlCiMgZG9ja2VyIHNoaW0gZnJvbSByZWxheS8uIFRoZSBiYXNlIGltYWdlIGlzIGJ1aWx0IGZyb20gdGhlIHBpbm5lZCB1cHN0cmVhbQojIHRhZyAoc2VlIC5naXRodWIvd29ya2Zsb3dzL2ltYWdlcy55bWwpOyB1cHN0cmVhbSBwdWJsaXNoZXMgbm8gaW1hZ2VzLgpBUkcgQkFTRT1ub2QtYmFzZS1zZXJ2ZXIKRlJPTSAke0JBU0V9ClVTRVIgcm9vdAojIHV0aWwtbGludXggcHJvdmlkZXMgc2V0cHJpdiwgdXNlZCBieSB0aGUgZW50cnkgc2NyaXB0IHRvIGRyb3AgdG8gbm9kZS4KUlVOIGFwdC1nZXQgdXBkYXRlICYmIGFwdC1nZXQgaW5zdGFsbCAteSAtLW5vLWluc3RhbGwtcmVjb21tZW5kcyB1dGlsLWxpbnV4ICYmIHJtIC1yZiAvdmFyL2xpYi9hcHQvbGlzdHMvKgpDT1BZIC0tY2htb2Q9NTU1IHJlbGF5L2RvY2tlciAvdXNyL2xvY2FsL2Jpbi9kb2NrZXIKQ09QWSAtLWNobW9kPTU1NSBpbWFnZXMvc2VydmVyLWVudHJ5LnNoIC91c3IvbG9jYWwvYmluL25vZC1yYWlsd2F5LXNlcnZlcgpXT1JLRElSIC9hcHAKQ01EIFsiL3Vzci9sb2NhbC9iaW4vbm9kLXJhaWx3YXktc2VydmVyIl0K
+# Nod server for Railway: upstream deployment/self-host/Dockerfile plus the
+# docker shim from relay/. The base image is built from the pinned upstream
+# tag (see .github/workflows/images.yml); upstream publishes no images.
+ARG BASE=nod-base-server
+FROM ${BASE}
+USER root
+# util-linux provides setpriv, used by the entry script to drop to node.
+RUN apt-get update && apt-get install -y --no-install-recommends util-linux && rm -rf /var/lib/apt/lists/*
+COPY --chmod=555 relay/docker /usr/local/bin/docker
+COPY --chmod=555 images/server-entry.sh /usr/local/bin/nod-railway-server
+WORKDIR /app
+CMD ["/usr/local/bin/nod-railway-server"]

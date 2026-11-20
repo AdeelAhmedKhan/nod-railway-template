@@ -1,1 +1,40 @@
-IyEvYmluL3NoCiMgQm9vdHMgdGhlIE5vZCBzZXJ2ZXIgYXMgdXNlciBub2RlIGFmdGVyIHByZXBhcmluZyB3aGF0IHRoZSBSYWlsd2F5CiMgdGVtcGxhdGUgY2Fubm90IGV4cHJlc3MgZGlyZWN0bHk6IHZvbHVtZSBvd25lcnNoaXAsIGEgY2Fub25pY2FsIFZhdWx0CiMga2V5LCBhbmQgdGhlIHJlbGF5IGNvbmZpZyBmaWxlIHRoZSBkb2NrZXIgc2hpbSByZWFkcy4Kc2V0IC1ldQo6ICIke05PRF9SRUxBWV9UT0tFTjo/Tk9EX1JFTEFZX1RPS0VOIGlzIHJlcXVpcmVkfSIKOiAiJHtOT0RfV09SS1NQQUNFX1JFTEFZOj9OT0RfV09SS1NQQUNFX1JFTEFZIGlzIHJlcXVpcmVkIChob3N0OnBvcnQpfSIKOiAiJHtOT0RfQlJPV1NFUl9SRUxBWTo/Tk9EX0JST1dTRVJfUkVMQVkgaXMgcmVxdWlyZWQgKGhvc3Q6cG9ydCl9IgoKZGF0YT0ke05PRF9EQVRBX1JPT1Q6LS92YXIvbGliL25vZH0KbWtkaXIgLXAgIiRkYXRhL3dvcmtzcGFjZXMiCmNob3duIG5vZGU6bm9kZSAiJGRhdGEiICIkZGF0YS93b3Jrc3BhY2VzIgpjaG1vZCA3MDAgIiRkYXRhIgoKIyBOb2QgcmVxdWlyZXMgTk9EX1ZBVUxUX0tFWSBhcyBjYW5vbmljYWwgYmFzZTY0IG9mIGV4YWN0bHkgMzIgYnl0ZXMKIyAodXBzdHJlYW0gc3JjL3Byb3ZpZGVycy9lbnZpcm9ubWVudC9rZXktc3RvcmUudHMpLiBSYWlsd2F5J3Mgc2VjcmV0KCkKIyBjYW5ub3QgZW1pdCB0aGF0IHNoYXBlLCBzbyB0aGUgdGVtcGxhdGUgZ2VuZXJhdGVzIGEgcmFuZG9tIHNlZWQgYW5kIHRoaXMKIyBzY3JpcHQgZGVyaXZlcyB0aGUga2V5IGRldGVybWluaXN0aWNhbGx5OiBzYW1lIHNlZWQsIHNhbWUga2V5LCBldmVyeQojIGJvb3QuIFNldHRpbmcgTk9EX1ZBVUxUX0tFWSBkaXJlY3RseSBvdmVycmlkZXMgdGhlIHNlZWQuCmlmIFsgLXogIiR7Tk9EX1ZBVUxUX0tFWTotfSIgXTsgdGhlbgogIDogIiR7Tk9EX1ZBVUxUX1NFRUQ6P1NldCBOT0RfVkFVTFRfU0VFRCBvciBOT0RfVkFVTFRfS0VZfSIKICBOT0RfVkFVTFRfS0VZPSQobm9kZSAtZSAncHJvY2Vzcy5zdGRvdXQud3JpdGUocmVxdWlyZSgiY3J5cHRvIikuY3JlYXRlSGFzaCgic2hhMjU2IikudXBkYXRlKHByb2Nlc3MuZW52Lk5PRF9WQVVMVF9TRUVEKS5kaWdlc3QoImJhc2U2NCIpKScpCiAgZXhwb3J0IE5PRF9WQVVMVF9LRVkKZmkKCiMgVGhlIGRvY2tlciBzaGltIHJlYWRzIGl0cyBjb25maWcgZnJvbSAkRE9DS0VSX0NPTkZJRy9ub2QtcmVsYXkuanNvbgojIGJlY2F1c2UgdGhlIHNlcnZlciBwYXNzZXMgb25seSBhIHNjcnViYmVkIGVudmlyb25tZW50IHRvIGl0cyBjaGlsZHJlbi4KbWtkaXIgLXAgL2V0Yy9ub2QtcmVsYXkKdW1hc2sgMDc3Cm5vZGUgLWUgJ3JlcXVpcmUoImZzIikud3JpdGVGaWxlU3luYygiL2V0Yy9ub2QtcmVsYXkvbm9kLXJlbGF5Lmpzb24iLCBKU09OLnN0cmluZ2lmeSh7dG9rZW46IHByb2Nlc3MuZW52Lk5PRF9SRUxBWV9UT0tFTiwgd29ya3NwYWNlOiBwcm9jZXNzLmVudi5OT0RfV09SS1NQQUNFX1JFTEFZLCBicm93c2VyOiBwcm9jZXNzLmVudi5OT0RfQlJPV1NFUl9SRUxBWX0pKScKY2hvd24gLVIgbm9kZTpub2RlIC9ldGMvbm9kLXJlbGF5CnVtYXNrIDAyMgpleHBvcnQgRE9DS0VSX0NPTkZJRz0vZXRjL25vZC1yZWxheQoKIyBUaGUgc2VydmVyIHByb2Nlc3MgaXRzZWxmIG5ldmVyIG5lZWRzIHRoZSByZWxheSB0b2tlbiBvciB0aGUgdmF1bHQgc2VlZAojIGFmdGVyIHRoaXMgcG9pbnQ7IHJlbW92ZSB0aGVtIGZyb20gaXRzIGVudmlyb25tZW50Lgp1bnNldCBOT0RfUkVMQVlfVE9LRU4gTk9EX1ZBVUxUX1NFRUQKCmNkIC9hcHAKZXhlYyBzZXRwcml2IC0tcmV1aWQ9bm9kZSAtLXJlZ2lkPW5vZGUgLS1pbml0LWdyb3VwcyBlbnYgSE9NRT0vaG9tZS9ub2RlIG5vZGUgLS1pbXBvcnQgdHN4IHNyYy9zZXJ2ZXIvaW5kZXgudHMK
+#!/bin/sh
+# Boots the Nod server as user node after preparing what the Railway
+# template cannot express directly: volume ownership, a canonical Vault
+# key, and the relay config file the docker shim reads.
+set -eu
+: "${NOD_RELAY_TOKEN:?NOD_RELAY_TOKEN is required}"
+: "${NOD_WORKSPACE_RELAY:?NOD_WORKSPACE_RELAY is required (host:port)}"
+: "${NOD_BROWSER_RELAY:?NOD_BROWSER_RELAY is required (host:port)}"
+
+data=${NOD_DATA_ROOT:-/var/lib/nod}
+mkdir -p "$data/workspaces"
+chown node:node "$data" "$data/workspaces"
+chmod 700 "$data"
+
+# Nod requires NOD_VAULT_KEY as canonical base64 of exactly 32 bytes
+# (upstream src/providers/environment/key-store.ts). Railway's secret()
+# cannot emit that shape, so the template generates a random seed and this
+# script derives the key deterministically: same seed, same key, every
+# boot. Setting NOD_VAULT_KEY directly overrides the seed.
+if [ -z "${NOD_VAULT_KEY:-}" ]; then
+  : "${NOD_VAULT_SEED:?Set NOD_VAULT_SEED or NOD_VAULT_KEY}"
+  NOD_VAULT_KEY=$(node -e 'process.stdout.write(require("crypto").createHash("sha256").update(process.env.NOD_VAULT_SEED).digest("base64"))')
+  export NOD_VAULT_KEY
+fi
+
+# The docker shim reads its config from $DOCKER_CONFIG/nod-relay.json
+# because the server passes only a scrubbed environment to its children.
+mkdir -p /etc/nod-relay
+umask 077
+node -e 'require("fs").writeFileSync("/etc/nod-relay/nod-relay.json", JSON.stringify({token: process.env.NOD_RELAY_TOKEN, workspace: process.env.NOD_WORKSPACE_RELAY, browser: process.env.NOD_BROWSER_RELAY}))'
+chown -R node:node /etc/nod-relay
+umask 022
+export DOCKER_CONFIG=/etc/nod-relay
+
+# The server process itself never needs the relay token or the vault seed
+# after this point; remove them from its environment.
+unset NOD_RELAY_TOKEN NOD_VAULT_SEED
+
+cd /app
+exec setpriv --reuid=node --regid=node --init-groups env HOME=/home/node node --import tsx src/server/index.ts
