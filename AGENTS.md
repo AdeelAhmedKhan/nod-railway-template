@@ -1,1 +1,24 @@
-IyBSdWxlcyBmb3IgdGhpcyByZXBvCgotICoqTmV2ZXIgY29tbWl0IGEgcmVhbCBzZWNyZXQuKiogTm8gcmVhbCBgTk9EX0FVVEhfVE9LRU5gLCBgTk9EX1ZBVUxUX1NFRURgLAogIGBOT0RfVkFVTFRfS0VZYCwgcmVsYXkgdG9rZW4sIFBvc3RncmVzIHBhc3N3b3JkLCBvciBwcm92aWRlciBBUEkga2V5IGluIGFueQogIGZpbGUsIGluY2x1ZGluZyB0ZXN0cywgZXhhbXBsZXMgYW5kIHRoZSBjb21wb3NlIHRlc3QgZmlsZS4gVGVzdHMgdXNlIG9idmlvdXMKICBwbGFjZWhvbGRlciB2YWx1ZXMgb25seS4gUnVuIGEgc2VjcmV0IHNjYW4gYmVmb3JlIGV2ZXJ5IHB1c2guCi0gKipQaW5uZWQgdXBzdHJlYW0gb25seS4qKiBJbWFnZXMgYnVpbGQgZnJvbSB0aGUgZXhhY3QgdXBzdHJlYW0gdGFnIGluCiAgYE5PRF9WRVJTSU9OYC4gTmV2ZXIgYnVpbGQgZnJvbSBhIGZsb2F0aW5nIGJyYW5jaCBvciBgbGF0ZXN0YCB1cHN0cmVhbSwgYW5kCiAgbmV2ZXIgbW9kaWZ5IHVwc3RyZWFtIE5vZCBzb3VyY2Ug4oCUIHRoZSBzZXJ2ZXIgbXVzdCBzdGF5IHByaXN0aW5lIHVwc3RyZWFtLgogIFRoZSBvbmx5IGNvZGUgb2Ygb3VycyB0aGF0IHRvdWNoZXMgdGhlIHJ1bnRpbWUgcGF0aCBpcyBgcmVsYXkvYCBhbmQgdGhlCiAgZW50cnkgc2NyaXB0cyBpbiBgaW1hZ2VzL2AuCi0gKipUaGUgcmVsYXkgY29udHJhY3QgaXMgdXBzdHJlYW0ncy4qKiBBbGxvdyBydWxlcyBpbgogIGByZWxheS9ub2QtcmVsYXktYWdlbnQubWpzYCBpbXBsZW1lbnQgdXBzdHJlYW0gYGRvY2tlci1wcm94eS5tanNgJ3MgcnVsZXMuCiAgSWYgYW4gdXBzdHJlYW0gcmVsZWFzZSBjaGFuZ2VzIHRoZSBleGVjIHNoYXBlcywgdXBkYXRlIHRoZSByZWxheSBhbmQgaXRzCiAgdGVzdHMgaW4gdGhlIHNhbWUgY2hhbmdlLCBhbmQgc2F5IHdoYXQgY2hhbmdlZC4KLSAqKlRlc3RzIGJlZm9yZSBpbWFnZXMuKiogYG5vZGUgLS10ZXN0IHRlc3QvcmVsYXkudGVzdC5tanNgIG11c3QgcGFzcyBiZWZvcmUKICB0aGUgaW1hZ2VzIHdvcmtmbG93IHJ1bnM7IHRoZSB3b3JrZmxvdyBhbHJlYWR5IGVuZm9yY2VzIHRoaXMuCi0gKipObyBwdXNoLCBwdWJsaXNoIG9yIGRlcGxveSBmcm9tIHRoaXMgcmVwby4qKiBQdXNoaW5nIHRvIEdpdEh1YiwgcnVubmluZwogIHRoZSBpbWFnZXMgd29ya2Zsb3csIHB1Ymxpc2hpbmcgb3IgdXBkYXRpbmcgdGhlIFJhaWx3YXkgdGVtcGxhdGUsIGFuZCB0ZXN0CiAgZGVwbG95bWVudHMgYXJlIHNlcGFyYXRlLCBodW1hbi1hcHByb3ZlZCBzdGVwcy4gQnVpbGQgYW5kIHZhbGlkYXRlIGxvY2FsbHkKICBvbmx5LgotICoqSG9uZXN0eSBpbiBkb2NzLioqIFRoZSB0ZW1wbGF0ZSBsb3NlcyB1cHN0cmVhbSdzIHdvcmtzcGFjZSBmaXJld2FsbCBvbgogIFJhaWx3YXkgKG5vIE5FVF9BRE1JTikuIE5ldmVyIHdyaXRlIGNvcHkgdGhhdCBoaWRlcyB0aGlzOyB0aGUgb3ZlcnZpZXcgYW5kCiAgUkVBRE1FIHN0YXRlIGl0IHBsYWlubHksIHdpdGggdGhlIG1pdGlnYXRpb24gKGRlZGljYXRlZCBwcm9qZWN0KS4K
+# Rules for this repo
+
+- **Never commit a real secret.** No real `NOD_AUTH_TOKEN`, `NOD_VAULT_SEED`,
+  `NOD_VAULT_KEY`, relay token, Postgres password, or provider API key in any
+  file, including tests, examples and the compose test file. Tests use obvious
+  placeholder values only. Run a secret scan before every push.
+- **Pinned upstream only.** Images build from the exact upstream tag in
+  `NOD_VERSION`. Never build from a floating branch or `latest` upstream, and
+  never modify upstream Nod source — the server must stay pristine upstream.
+  The only code of ours that touches the runtime path is `relay/` and the
+  entry scripts in `images/`.
+- **The relay contract is upstream's.** Allow rules in
+  `relay/nod-relay-agent.mjs` implement upstream `docker-proxy.mjs`'s rules.
+  If an upstream release changes the exec shapes, update the relay and its
+  tests in the same change, and say what changed.
+- **Tests before images.** `node --test test/relay.test.mjs` must pass before
+  the images workflow runs; the workflow already enforces this.
+- **No push, publish or deploy from this repo.** Pushing to GitHub, running
+  the images workflow, publishing or updating the Railway template, and test
+  deployments are separate, human-approved steps. Build and validate locally
+  only.
+- **Honesty in docs.** The template loses upstream's workspace firewall on
+  Railway (no NET_ADMIN). Never write copy that hides this; the overview and
+  README state it plainly, with the mitigation (dedicated project).
