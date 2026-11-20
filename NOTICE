@@ -1,1 +1,13 @@
-Tm9kIG9uIFJhaWx3YXkg4oCUIHRlbXBsYXRlLCByZWxheSBhbmQgaW1hZ2VzCkNvcHlyaWdodCAyMDI2IEFkZWVsIEFobWVkIEtoYW4KClRoaXMgcHJvZHVjdCBpbmNsdWRlcyBzb2Z0d2FyZSBmcm9tIHRoZSBOb2QgcHJvamVjdAooaHR0cHM6Ly9naXRodWIuY29tL244bi1pby9ub2QpLCBkZXZlbG9wZWQgYnkgbjhuLWlvIGFuZCBjb250cmlidXRvcnMsCmxpY2Vuc2VkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjAuIFRoZSBpbWFnZXMgYnVpbHQgZnJvbQp0aGlzIHJlcG9zaXRvcnkgd3JhcCBOb2QncyBvd24gRG9ja2VyZmlsZXMgYXQgdGhlIHBpbm5lZCByZWxlYXNlIHJlY29yZGVkCmluIE5PRF9WRVJTSU9OLCBhbmQgdGhlIHJlbGF5J3MgYWxsb3cgcnVsZXMgaW1wbGVtZW50IHRoZSBleGVjIGNvbnRyYWN0CmRlZmluZWQgYnkgTm9kJ3MgcmVzdHJpY3RlZCBEb2NrZXIgcHJveHkKKGRlcGxveW1lbnQvc2VsZi1ob3N0L2RvY2tlci1wcm94eS5tanMgaW4gdGhlIE5vZCByZXBvc2l0b3J5KS4KCk5vZCBpcyBhIHRyYWRlbWFyayBvZiBuOG4uIFRoaXMgdGVtcGxhdGUgaXMgYSBjb21tdW5pdHkgcHJvamVjdCBhbmQgaXMKbm90IG1hZGUsIGVuZG9yc2VkIG9yIHN1cHBvcnRlZCBieSBuOG4uCg==
+Nod on Railway — template, relay and images
+Copyright 2026 Adeel Ahmed Khan
+
+This product includes software from the Nod project
+(https://github.com/n8n-io/nod), developed by n8n-io and contributors,
+licensed under the Apache License, Version 2.0. The images built from
+this repository wrap Nod's own Dockerfiles at the pinned release recorded
+in NOD_VERSION, and the relay's allow rules implement the exec contract
+defined by Nod's restricted Docker proxy
+(deployment/self-host/docker-proxy.mjs in the Nod repository).
+
+Nod is a trademark of n8n. This template is a community project and is
+not made, endorsed or supported by n8n.
