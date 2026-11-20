@@ -1,1 +1,92 @@
-IyBOb2Qgb24gUmFpbHdheQoKUmFpbHdheSB0ZW1wbGF0ZSBmb3IgW05vZF0oaHR0cHM6Ly9naXRodWIuY29tL244bi1pby9ub2QpIChwaW5uZWQgcmVsZWFzZSBpbgpgTk9EX1ZFUlNJT05gLCBjdXJyZW50bHkgMC45LjApLCB0aGUgcGVyc29uYWwgYWdlbnQgZnJvbSBuOG4gTGFicy4gTm9kIGhhcyBpdHMKb3duIExpbnV4IHdvcmtzcGFjZSBhbmQgaXRzIG93biBDaHJvbWl1bSBicm93c2VyLCBhbmQgYXNrcyBiZWZvcmUgaXQgc2VuZHMKYW55dGhpbmcgb3IgYWN0cyBmb3IgeW91LgoKVGhlIGRlcGxveWVyIGd1aWRlIGlzIFtURU1QTEFURV9PVkVSVklFVy5tZF0oVEVNUExBVEVfT1ZFUlZJRVcubWQpLiBUaGUKdGVtcGxhdGUgZGVmaW5pdGlvbiwgd2l0aCBhIGJ1aWxkIHNoZWV0IGV4cGxhaW5pbmcgZXZlcnkgY2hvaWNlLCBpcwpbdGVtcGxhdGUuanNvbl0odGVtcGxhdGUuanNvbikuCgojIyBIb3cgaXQgd29ya3MKClVwc3RyZWFtLCB0aGUgTm9kIHNlcnZlciBkcml2ZXMgaXRzIHdvcmtzcGFjZSBhbmQgYnJvd3NlciBjb250YWluZXJzIG9ubHkKdGhyb3VnaCBgZG9ja2VyIGV4ZWNgLCBiZWhpbmQgYSByZXN0cmljdGVkIERvY2tlciBwcm94eQooYGRlcGxveW1lbnQvc2VsZi1ob3N0L2RvY2tlci1wcm94eS5tanNgIGluIHRoZSB1cHN0cmVhbSByZXBvKS4gUmFpbHdheQpzZXJ2aWNlcyBoYXZlIG5vIERvY2tlciBzb2NrZXQsIHNvIHRoaXMgdGVtcGxhdGUga2VlcHMgdGhlIHNhbWUgZm91ci1zZXJ2aWNlCnNoYXBlIGFuZCByZXBsYWNlcyB0aGUgdHJhbnNwb3J0OgoKLSAqKmByZWxheS9kb2NrZXJgKiogcmVwbGFjZXMgdGhlIGRvY2tlciBDTEkgaW5zaWRlIHRoZSBzZXJ2ZXIgaW1hZ2UuIEl0CiAgYWNjZXB0cyBleGFjdGx5IHRoZSB0d28gZXhlYyBzaGFwZXMgdGhlIHNlcnZlciBpc3N1ZXMsIGFuZCBmb3J3YXJkcyB0aGVtCiAgb3ZlciBSYWlsd2F5J3MgcHJpdmF0ZSBuZXR3b3JrLiBBbnl0aGluZyBlbHNlIGV4aXRzIDEyNS4KLSAqKmByZWxheS9ub2QtcmVsYXktYWdlbnQubWpzYCoqIHJ1bnMgYXMgcm9vdCBpbiB0aGUgV29ya3NwYWNlIGFuZCBCcm93c2VyCiAgc2VydmljZXMuIEl0IGNoZWNrcyBhIHNoYXJlZCB0b2tlbiAoY29uc3RhbnQtdGltZSBjb21wYXJlKSwgYXBwbGllcyB0aGUKICBzYW1lIGFsbG93IHJ1bGVzIGFzIHVwc3RyZWFtJ3MgcHJveHkg4oCUIGJyb3dzZXIgcnVucyB0aGUgYnJpZGdlIG9ubHksIGFzCiAgYG5vZGVgOyB3b3Jrc3BhY2UgY29tbWFuZHMgcnVuIGFzIGBub2RlYCBpbiBhIHBlci10aHJlYWQgZGlyZWN0b3J5IG9yCiAgYC92YXIvdG1wYDsgY29ubmVjdGVkLUNMSSB1c2VycyBydW4gaW4gYC92YXIvdG1wYCBvbmx5IOKAlCB0aGVuIGRyb3BzCiAgcHJpdmlsZWdlcyB3aXRoIGBzZXRwcml2YCAoc3VwcGxlbWVudGFyeSBncm91cHMgY2xlYXJlZCwgbm8tbmV3LXByaXZzLAogIGVtcHR5IGNhcGFiaWxpdHkgYm91bmRpbmcgc2V0KSBpbnRvIGEgZml4ZWQsIHNjcnViYmVkIGVudmlyb25tZW50LCBhbmQKICBzdHJlYW1zIHN0ZGlvIGFuZCB0aGUgZXhpdCBjb2RlIGJhY2suCi0gKipgaW1hZ2VzL2AqKiB3cmFwcyB1cHN0cmVhbSdzIG93biBEb2NrZXJmaWxlcy4gYC5naXRodWIvd29ya2Zsb3dzL2ltYWdlcy55bWxgCiAgY2hlY2tzIG91dCB1cHN0cmVhbSBhdCB0aGUgcGlubmVkIHRhZywgcnVucyB0aGUgcmVsYXkgdGVzdHMsIGJ1aWxkcyB0aGUKICB1cHN0cmVhbSBiYXNlcywgbGF5ZXJzIHRoZSByZWxheSBvbiB0b3AsIGFuZCBwdXNoZXMKICBgZ2hjci5pby9hZGVlbGFobWVka2hhbi9ub2QtcmFpbHdheS17c2VydmVyLHdvcmtzcGFjZSxicm93c2VyfWAuCgpgYGAKICAgICAgICAgICAgcHVibGljIEhUVFBTCiAgICAgICAgICAgICAgICAg4pSCCiAgICAgICAgICDilIzilIDilIDilIDilIDilIDilIDilrzilIDilIDilIDilIDilIDilIDilJAgICAgICAgIHByaXZhdGUgICAgICAgICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAKICAgICAgICAgIOKUgiAgTm9kIHNlcnZlciDilIIg4pSA4pSA4pSA4pSA4pSA4pSAIHJlbGF5IOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKWuiDilIIgV29ya3NwYWNlICDilIIgIC93b3Jrc3BhY2Ugdm9sdW1lCiAgICAgICAgICDilIIgIChvbmx5ICAgICAg4pSCIOKUgOKUgOKUgOKUgOKUgOKUgCByZWxheSDilIDilIDilIDilIDilIDilIDilIDilIDilrog4pSCIEJyb3dzZXIgICAg4pSCICAvZGF0YSB2b2x1bWUKICAgICAgICAgIOKUgiAgIHB1YmxpYykgICDilIIg4pSA4pSA4pSA4pSA4pSA4pSAIERBVEFCQVNFX1VSTCDilIDilrog4pSCIFBvc3RncmVzICAg4pSCCiAgICAgICAgICDilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJggICAgICAgICAgICAgICAgICAgICAgICDilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJgKICAgICAgICAgICAvdmFyL2xpYi9ub2Qgdm9sdW1lCmBgYAoKUGVyc2lzdGVuY2U6IHNlcnZlciBkYXRhIG9uIGAvdmFyL2xpYi9ub2RgOyB3b3Jrc3BhY2UgZmlsZXMgb24gYC93b3Jrc3BhY2VgOwp0b29scyB0aGUgYWdlbnQgaW5zdGFsbHMgcGVyc2lzdCB0b28sIGJlY2F1c2UgYC9ob21lL25vZGVgIGlzIGEgc3ltbGluayBpbnRvCnRoZSBzYW1lIHZvbHVtZSAoYC93b3Jrc3BhY2UvLm5vZC1ob21lYCkg4oCUIGEgUmFpbHdheSBzZXJ2aWNlIGdldHMgb25lIHZvbHVtZSwKdXBzdHJlYW0gZXhwZWN0cyB0d287IGJyb3dzZXIgc2lnbi1pbnMgcGVyc2lzdCBvbiBgL2RhdGFgOyBQb3N0Z3JlcyBvbiBpdHMKb3duIHZvbHVtZS4KCiMjIFdoYXQgaXMgZGlmZmVyZW50IGZyb20gdXBzdHJlYW0gc2VsZi1ob3N0CgpPbmUgdGhpbmcsIGFuZCBpdCBtYXR0ZXJzOiB1cHN0cmVhbSBpc29sYXRlcyB0aGUgd29ya3NwYWNlIGJlaGluZCBhbgppcHRhYmxlcyBlZ3Jlc3MgZmlyZXdhbGwgKGEgc2VwYXJhdGUgY29udGFpbmVyIHdpdGggYE5FVF9BRE1JTmApLiBSYWlsd2F5CmRvZXMgbm90IGdyYW50IGBORVRfQURNSU5gLCBzbyAqKnRoZSB3b3Jrc3BhY2UgZmlyZXdhbGwgZG9lcyBub3QgZXhpc3QgaGVyZSoqCmFuZCB3b3Jrc3BhY2UgY29tbWFuZHMgY2FuIHJlYWNoIHRoZSBwcm9qZWN0J3MgcHJpdmF0ZSBuZXR3b3JrLiBFdmVyeSBvdGhlcgpzZXJ2aWNlIGluIHRoZSB0ZW1wbGF0ZSBpcyB0b2tlbi0gb3IgcGFzc3dvcmQtcHJvdGVjdGVkLCBhbmQgdGhlIHRlbXBsYXRlIGlzCm1lYW50IHRvIGJlIGRlcGxveWVkIGFzIGEgZGVkaWNhdGVkIHByb2plY3QuIFRoZSBvdmVydmlldyByZXBlYXRzIHRoaXM7CnBsZWFzZSByZWFkIGl0IGJlZm9yZSBkZXBsb3lpbmcuCgpBbHNvIG5vdGU6IHRoZXJlIGlzIG5vIFJhaWx3YXkgaGVhbHRoY2hlY2sgb24gdGhlIHNlcnZlciwgb24gcHVycG9zZS4gTm9kCnJldHVybnMgNDAzIGZvciBhbnkgSG9zdCBvdGhlciB0aGFuIGl0cyBjb25maWd1cmVkIHB1YmxpYyBVUkwgYW5kIGl0cwpgL2FwaS9oZWFsdGhgIG5lZWRzIHRoZSBiZWFyZXIgdG9rZW4sIHNvIFJhaWx3YXkncyBwcm9iZXIgY2FuIG5ldmVyIHBhc3MuClJlc3RhcnQtb24tZmFpbHVyZSBjb3ZlcnMgYm9vdCBvcmRlcmluZyBpbnN0ZWFkLgoKIyMgVGVzdHMKCi0gYG5vZGUgLS10ZXN0IHRlc3QvcmVsYXkudGVzdC5tanNgIOKAlCB0aGUgcmVsYXkgY29udHJhY3QsIG5vIGNvbnRhaW5lcnMKICBuZWVkZWQ6IHN0ZGlvIGJ5dGUtZm9yLWJ5dGUsIGV4aXQgY29kZXMsIHN0ZGVyciBzZXBhcmF0aW9uLCB3b3JrZGlyCiAgY3JlYXRpb24sIHRva2VuIHJlamVjdGlvbiwgd29ya2Rpci91c2VyIGFsbG93IHJ1bGVzLCBlbnYgc2NydWJiaW5nLAogIHByaXZpbGVnZS1kcm9wIGNoZWNrcywgc2hpbSBleGl0IGJlaGF2aW91ci4KLSBgdGVzdC9jb21wb3NlLnlhbWxgIOKAlCB0aGUgZm91ci1zZXJ2aWNlIFJhaWx3YXkgdG9wb2xvZ3kgdW5kZXIgbG9jYWwKICBEb2NrZXIgQ29tcG9zZSwgd2l0aCBubyBEb2NrZXIgc29ja2V0IChuZWVkcyB0aGUgaW1hZ2VzIGJ1aWx0IGZpcnN0KS4KLSBBIGxpdmUgZGVwbG95IHRlc3Qgb24gUmFpbHdheSBpcyB0aGUgZmluYWwgcHJvb2YgYW5kIGlzIGEgc2VwYXJhdGUsCiAgaHVtYW4tYXBwcm92ZWQgc3RlcDsgbG9jYWwgcmVzdWx0cyBhcmUgbm90IGEgc3Vic3RpdHV0ZSBmb3IgaXQuCgojIyBVcGdyYWRpbmcgTm9kCgoxLiBCdW1wIGBOT0RfVkVSU0lPTmAgdG8gdGhlIG5ldyB1cHN0cmVhbSB0YWcgKGUuZy4gYG5vZC12MC4xMC4wYCkuCjIuIFJ1biBgbm9kZSAtLXRlc3QgdGVzdC9yZWxheS50ZXN0Lm1qc2AuIElmIHVwc3RyZWFtIGNoYW5nZWQgaXRzIGV4ZWMKICAgc2hhcGVzLCB0aGUgdGVzdHMgYW5kIHRoZSByZWxheSdzIGFsbG93IHJ1bGVzIGFyZSB1cGRhdGVkIGZpcnN0LgozLiBQdXNoIHRvIGBtYWluYCBhbmQgbGV0IHRoZSBpbWFnZXMgd29ya2Zsb3cgYnVpbGQgYW5kIHB1c2ggdGhlIG5ldyB0YWdzLgo0LiBVcGRhdGUgdGhlIHRocmVlIGltYWdlIHRhZ3MgaW4gYHRlbXBsYXRlLmpzb25gIGFuZCByZXB1Ymxpc2ggdGhlCiAgIHRlbXBsYXRlLgoKIyMgTGljZW5zZQoKQXBhY2hlLTIuMCwgc2FtZSBhcyB1cHN0cmVhbSBOb2QuIFNlZSBbTElDRU5TRV0oTElDRU5TRSkgYW5kCltOT1RJQ0VdKE5PVElDRSkuIFRoaXMgaXMgYSBjb21tdW5pdHkgdGVtcGxhdGU7IGl0IGlzIG5vdCBtYWRlLCBlbmRvcnNlZCBvcgpzdXBwb3J0ZWQgYnkgbjhuLgo=
+# Nod on Railway
+
+Railway template for [Nod](https://github.com/n8n-io/nod) (pinned release in
+`NOD_VERSION`, currently 0.9.0), the personal agent from n8n Labs. Nod has its
+own Linux workspace and its own Chromium browser, and asks before it sends
+anything or acts for you.
+
+The deployer guide is [TEMPLATE_OVERVIEW.md](TEMPLATE_OVERVIEW.md). The
+template definition, with a build sheet explaining every choice, is
+[template.json](template.json).
+
+## How it works
+
+Upstream, the Nod server drives its workspace and browser containers only
+through `docker exec`, behind a restricted Docker proxy
+(`deployment/self-host/docker-proxy.mjs` in the upstream repo). Railway
+services have no Docker socket, so this template keeps the same four-service
+shape and replaces the transport:
+
+- **`relay/docker`** replaces the docker CLI inside the server image. It
+  accepts exactly the two exec shapes the server issues, and forwards them
+  over Railway's private network. Anything else exits 125.
+- **`relay/nod-relay-agent.mjs`** runs as root in the Workspace and Browser
+  services. It checks a shared token (constant-time compare), applies the
+  same allow rules as upstream's proxy — browser runs the bridge only, as
+  `node`; workspace commands run as `node` in a per-thread directory or
+  `/var/tmp`; connected-CLI users run in `/var/tmp` only — then drops
+  privileges with `setpriv` (supplementary groups cleared, no-new-privs,
+  empty capability bounding set) into a fixed, scrubbed environment, and
+  streams stdio and the exit code back.
+- **`images/`** wraps upstream's own Dockerfiles. `.github/workflows/images.yml`
+  checks out upstream at the pinned tag, runs the relay tests, builds the
+  upstream bases, layers the relay on top, and pushes
+  `ghcr.io/adeelahmedkhan/nod-railway-{server,workspace,browser}`.
+
+```
+            public HTTPS
+                 │
+          ┌──────▼──────┐        private         ┌────────────┐
+          │  Nod server │ ────── relay ────────► │ Workspace  │  /workspace volume
+          │  (only      │ ────── relay ────────► │ Browser    │  /data volume
+          │   public)   │ ────── DATABASE_URL ─► │ Postgres   │
+          └─────────────┘                        └────────────┘
+           /var/lib/nod volume
+```
+
+Persistence: server data on `/var/lib/nod`; workspace files on `/workspace`;
+tools the agent installs persist too, because `/home/node` is a symlink into
+the same volume (`/workspace/.nod-home`) — a Railway service gets one volume,
+upstream expects two; browser sign-ins persist on `/data`; Postgres on its
+own volume.
+
+## What is different from upstream self-host
+
+One thing, and it matters: upstream isolates the workspace behind an
+iptables egress firewall (a separate container with `NET_ADMIN`). Railway
+does not grant `NET_ADMIN`, so **the workspace firewall does not exist here**
+and workspace commands can reach the project's private network. Every other
+service in the template is token- or password-protected, and the template is
+meant to be deployed as a dedicated project. The overview repeats this;
+please read it before deploying.
+
+Also note: there is no Railway healthcheck on the server, on purpose. Nod
+returns 403 for any Host other than its configured public URL and its
+`/api/health` needs the bearer token, so Railway's prober can never pass.
+Restart-on-failure covers boot ordering instead.
+
+## Tests
+
+- `node --test test/relay.test.mjs` — the relay contract, no containers
+  needed: stdio byte-for-byte, exit codes, stderr separation, workdir
+  creation, token rejection, workdir/user allow rules, env scrubbing,
+  privilege-drop checks, shim exit behaviour.
+- `test/compose.yaml` — the four-service Railway topology under local
+  Docker Compose, with no Docker socket (needs the images built first).
+- A live deploy test on Railway is the final proof and is a separate,
+  human-approved step; local results are not a substitute for it.
+
+## Upgrading Nod
+
+1. Bump `NOD_VERSION` to the new upstream tag (e.g. `nod-v0.10.0`).
+2. Run `node --test test/relay.test.mjs`. If upstream changed its exec
+   shapes, the tests and the relay's allow rules are updated first.
+3. Push to `main` and let the images workflow build and push the new tags.
+4. Update the three image tags in `template.json` and republish the
+   template.
+
+## License
+
+Apache-2.0, same as upstream Nod. See [LICENSE](LICENSE) and
+[NOTICE](NOTICE). This is a community template; it is not made, endorsed or
+supported by n8n.
