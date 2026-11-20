@@ -1,0 +1,50 @@
+name: images
+# Builds upstream Nod's three images at the pinned tag in NOD_VERSION, then
+# layers the Railway relay on top. Upstream publishes no container images
+# (its self-host flow builds from source), so this workflow is the supply
+# chain for the template: every image is reproducible from this repo plus
+# the pinned upstream tag.
+on:
+  push:
+    branches: [main]
+    paths: [images/**, relay/**, .github/workflows/images.yml, NOD_VERSION]
+  workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: server
+            upstream: deployment/self-host/Dockerfile
+          - name: workspace
+            upstream: Dockerfile.workspace
+          - name: browser
+            upstream: Dockerfile.browser
+    steps:
+      - uses: actions/checkout@v4
+      - id: v
+        run: echo "ref=$(cat NOD_VERSION)" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          repository: n8n-io/nod
+          ref: ${{ steps.v.outputs.ref }}
+          path: upstream
+      - name: Relay contract tests
+        run: node --test test/relay.test.mjs
+      - name: Build upstream base
+        run: docker build -f upstream/${{ matrix.upstream }} -t nod-base-${{ matrix.name }} upstream
+      - name: Build and push Railway image
+        run: |
+          tag=${{ steps.v.outputs.ref }}; tag=${tag#nod-v}
+          owner=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          img=ghcr.io/$owner/nod-railway-${{ matrix.name }}
+          docker build -f images/Dockerfile.${{ matrix.name }} --build-arg BASE=nod-base-${{ matrix.name }} \
+            -t $img:$tag -t $img:latest .
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+          docker push $img:$tag
+          docker push $img:latest
